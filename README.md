@@ -42,3 +42,10 @@ Integrer une image :
 
 ## Syntaxe *latex* pour les formules
 
+Pour les formules à gauche ou dans du texte entre $ formule $ et pour des formules centrées $$ formules $$
+
+Exemple :
+```latex
+$f(x) = x^2 +5x +8$
+$$f(x) = x^2 +5x +8$$
+```
