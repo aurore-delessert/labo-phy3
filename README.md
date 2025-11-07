@@ -13,9 +13,19 @@ Après avoir travailler sur le document executer la commande
 git add .
 git commit -am "expliquer les modifs entre les guillemets"
 git push
-```
+``` 
 
 ## Syntaxe Markdown
+
+```md
+# -> Titre
+## -> Sous section 1
+### -> Sous section 2
+...
+```
+# Titre
+## Sous section 1
+### Sous section 2
 
 ## Syntaxe *latex* pour les formules
 
