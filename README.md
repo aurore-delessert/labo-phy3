@@ -46,5 +46,7 @@ Pour les formules à gauche ou dans du texte entre $ formule $ et pour des formu
 
 Exemple :
 $f(x) = x^2 +5x +8$
-$$f(x) = x^2 +5x +8$$
+$$
+f(x) = x^2 +5x +8
+$$
 
