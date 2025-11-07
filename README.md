@@ -68,4 +68,14 @@ $4 = x^{puissance}
 $5 = \pi * \omega$
 ```
 
+Ce qui donne en réel :
 
+$1 = fraction = \dfrac{au dessus de la fraction}{au dessous de la fraction}$
+
+$2 = F_{indice}$
+
+$3 = \sqrt{racine carrée}
+
+$4 = x^{puissance}
+
+$5 = \pi * \omega$
