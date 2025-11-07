@@ -4,4 +4,4 @@
 
 ## Syntaxe Markdown
 
-## Syntaxe $latex$ pour les formules
+## Syntaxe $\latex$ pour les formules
