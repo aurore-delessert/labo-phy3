@@ -18,14 +18,27 @@ git push
 ## Syntaxe Markdown
 
 ```md
-# -> Titre
-## -> Sous section 1
-### -> Sous section 2
-...
-```
 # Titre
 ## Sous section 1
 ### Sous section 2
+...
+```
+Exemples :
+# Titre
+## Sous section 1
+### Sous section 2
+
+Nouvelle page ou nouvelle ligne :
+```latex
+\newpage
+\newline
+```
+
+Integrer une image :
+
+```md
+![texte de la figure](chemin de l'image, dans nos labos c'est : images/nom-de-limage.png)
+```
 
 ## Syntaxe *latex* pour les formules
 
