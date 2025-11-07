@@ -42,6 +42,8 @@ Integrer une image :
 
 ## Syntaxe *latex* pour les formules
 
+### Formules
+
 Pour les formules à gauche ou dans du texte entre $ formule $ et pour des formules centrées $$ formules $$
 
 Exemple :
@@ -49,4 +51,21 @@ Exemple :
 $f(x) = x^2 +5x +8$
 
 $$f(x) = x^2 +5x +8$$
+
+### Commandes pour caractères spéciaux
+
+Pour faire une barre de fraction ou utiliser des lettres grecques, il faut avoir recours a certaine commande toujours precedée d'un "\"
+
+```latex
+$1 = fraction = \dfrac{au dessus de la fraction}{au dessous de la fraction}$
+
+$2 = F_{indice}$
+
+$3 = \sqrt{racine carrée}
+
+$4 = x^{puissance}
+
+$5 = \pi * \omega$
+```
+
 
