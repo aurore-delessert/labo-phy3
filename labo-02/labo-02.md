@@ -25,7 +25,7 @@ header-includes:
 Physique — HEIG-VD\\[1.5cm]
 
 \textbf{Date du laboratoire :} 17 octobre 2025\\
-\textbf{Professeure :} A-G Pawlowski\\
+\textbf{Professeure :} Dr Anne-Gabrielle Pawlowski\\
 \textbf{Salle de classe :} T06\\[3cm]
 
 \vfill
@@ -66,7 +66,7 @@ Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du
 
 Champs d'induction magnétique créé par une bobine :
 
-$$B = \dfrac{{\mu}_{0} N I}{L} [T]  (1)$$
+$$B = \dfrac{{\mu}_{0} N I}{L} [T]    (1)$$
 
 Avec : $\begin{cases} \mu_{0} = 4 \pi \times 10^{-7} [Vs/Am] \\ N = \text{nombre de spires} \\ I = \text{courant traversant la bobine} [A] \\ L = \text{longueur de la bobine} [m] \end{cases}$
 
@@ -74,6 +74,6 @@ Avec : $\begin{cases} \mu_{0} = 4 \pi \times 10^{-7} [Vs/Am] \\ N = \text{nombre
 
 Force exercée sur une particule chargée en mouvement dans un champ magnétique :
 
-$$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]  (2)$$
+$$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]   (2)$$
 
 Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{champ électrique} [V/m] \\ \vec{v} = \text{vitesse de la particule} [m/s] \\ \vec{B} = \text{champ magnétique} [T] \end{cases}$
