@@ -57,7 +57,7 @@ $$f(x) = x^2 +5x +8$$
 Pour faire une barre de fraction ou utiliser des lettres grecques, il faut avoir recours a certaine commande toujours precedée d'un "\"
 
 ```latex
-$1 = fraction = \dfrac{au dessus de la fraction}{au dessous de la fraction}$
+$1 = fraction = \dfrac{\text{au dessus de la fraction}}{\text{au dessous de la fraction}}$
 
 $2 = F_{indice}$
 
