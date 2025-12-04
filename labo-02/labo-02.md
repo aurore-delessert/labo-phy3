@@ -77,3 +77,4 @@ Force exercée sur une particule chargée en mouvement dans un champ magnétique
 $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]   (2)$$
 
 Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{champ électrique} [V/m] \\ \vec{v} = \text{vitesse de la particule} [m/s] \\ \vec{B} = \text{champ magnétique} [T] \end{cases}$
+
