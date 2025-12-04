@@ -13,7 +13,13 @@ Après avoir travailler sur le document executer la commande
 git add .
 git commit -am "expliquer les modifs entre les guillemets"
 git push
-``` 
+```
+
+## Convertir en pdf :
+
+```
+pandoc labo-02.md -o labo-02.pdf --pdf-engine=xelatex
+```
 
 ## Syntaxe Markdown
 
