@@ -55,6 +55,38 @@ Le faisceau est généré et focalisé sous vide dans un tube cathodique (dit au
 - Des champs magnétiques, orientés perpendiculairement par rapport au faisceau d’électrons, peuvent également dévier le faisceau. Pour générer les champs magnétiques des bobines électriques sont utilisées et peuvent être placées sous différents angles à l’extérieur du tube à vide, sur une armature circulaire et concentrique autour de l’axe du tube cathodique, afin d’étudier la déviation du faisceau de manière contrôlée en fonction de l’alimentation des bobines et de la vitesse des électrons.
 Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du faisceau d’électrons par le champ magnétique résulte le long l’axe verticale, on peut alimenter la bobine avec un signal électrique que l’on souhaite représenter en fonction du temps, simultanément à un balayage horizontal du faisceau, et ainsi rendre visible le signal électrique sur l’écran fluorescent comme sur un oscilloscope.
 
+## Matériel utilisé & Caractéristiques techniques 
+Tout au long de notre laboratoire, nous allons utiliser le matériel suivant : 
+  - Le canon à électron montré en figure 1 
+  - Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron. 
+  - 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage. 
+  - 3 Bobines 
+  - Une alimentation spécifique pour le laboratoire. 
+
+Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte : 
+- Une tension anodique (U_a) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 Vcc. 
+- Un courant anodique de maximum 1 mA. 
+- une tension de chauffage entre 6 et 12 V 
+- Une tension en dents de scie de 100 V avec une fréquence entre 3,5 et 650 Hz. 
+- Des bobines de déviation qui ont soit 300 ou 600 spires, avec une résistance interne de 4,2 $\Omega$ et impédance de 6 mH. 
+
+Pour le module de commande, le voici : 
+
+![module de commande](images/Module-commande.png)
+
+Avec: 
+\begin{itemize}
+\item A : Anode 
+\item C : Cathode 
+\item H : Chauffage 
+\item W : Cylindre Wehnelt 
+\item PE : Terre de protection 
+\item $U_+$ : Electrode de déviation droite
+\item $U_-$ : Electrode de déviation gauche
+\end{itemize}
+
+\newpage
+
 ## Partie théorique
 
 ### Rappel des formules
@@ -81,7 +113,7 @@ Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{c
 
 ## 1. Expérience 1 - Faisceau d'électron (Canon à électrons)
 
-### 1.1 Introduction
+### 1.0 Introduction
 
 Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que :
 
@@ -90,6 +122,22 @@ Cette expérience a pour but d'observer la formation et la déviation d'un faisc
 \item **La déviation du faisceau** qui est provoquée par l'action de champ électrique et même magnétique.
 \item **La visualisation de signaux électriques** sur l'écran fluorescent grâce à un balayage contrôlé.
 \end{itemize}
+
+## 1.1 Prise en main & Calibration du système 
+Dans le but de pouvoir mieux comprendre comment régler le système et de réaliser des mesures précises et plus simple à analyser, nous avons calibré notre oscilloscope en déterminant la tension de Wehnelt. 
+
+### 1.1.1 Méthode de mesure 
+Afin de pouvoir réaliser ce laboratoire avec une meilleurs visibilité des mesures, nous avons : 
+\begin{itemize}
+\item Fixer une tension anodique à 250V 
+\item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V. 
+\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aiments qui se situaient sous l'écran comme montré sur la photo ci-dessous 
+\end{itemize}
+
+![Aiments](images/Aiment%20sur%20oscilloscope.png)
+
+En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de 18 $\pm$ 0,2V 
+
   
 ## 1.2 Manipulation 1 - Déviation électrique du faisceau électronique
 
@@ -116,6 +164,9 @@ On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement tro
 Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \text{longueur de la bobine} [m] \\ D = \text{distance entre la sortie des plaques et l'écran} [m] \\ V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ e = \text{charge d'un électron} [C] \\ m_e = \text{masse d'un électron} [kg] \end{cases}$
 
 On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$ 
+
+
+### 1.2.2 Calibration 
 
 
 ## 3. Formes de lissajous
