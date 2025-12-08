@@ -55,7 +55,6 @@ Le faisceau est généré et focalisé sous vide dans un tube cathodique (dit au
 - Des champs magnétiques, orientés perpendiculairement par rapport au faisceau d’électrons, peuvent également dévier le faisceau. Pour générer les champs magnétiques des bobines électriques sont utilisées et peuvent être placées sous différents angles à l’extérieur du tube à vide, sur une armature circulaire et concentrique autour de l’axe du tube cathodique, afin d’étudier la déviation du faisceau de manière contrôlée en fonction de l’alimentation des bobines et de la vitesse des électrons.
 Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du faisceau d’électrons par le champ magnétique résulte le long l’axe verticale, on peut alimenter la bobine avec un signal électrique que l’on souhaite représenter en fonction du temps, simultanément à un balayage horizontal du faisceau, et ainsi rendre visible le signal électrique sur l’écran fluorescent comme sur un oscilloscope.
 
-
 ## Partie théorique
 
 ### Rappel des formules
@@ -79,16 +78,23 @@ $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]   (2)$$
 Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{champ électrique} [V/m] \\ \vec{v} = \text{vitesse de la particule} [m/s] \\ \vec{B} = \text{champ magnétique} [T] \end{cases}$
 
 \newpage
-## 1. Expérience 1 - Faisceau d'électron (Canon à électrons)
-### 1.1 Introduction 
-Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que : 
 
-- **L'accélération des électrons** qui subissent l'effet d'un champ électrique axial (le canon à électrons). 
-- **La déviation du faisceau** qui est provoquée par l'action de champ électrique et même magnétique. 
-- **La visualisation de signaux électriques** sur l'écran fluorescent grâce à un balayage contrôlé. 
+## 1. Expérience 1 - Faisceau d'électron (Canon à électrons)
+
+### 1.1 Introduction
+
+Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que :
+
+\begin{itemize}
+\item **L'accélération des électrons** qui subissent l'effet d'un champ électrique axial (le canon à électrons).
+\item **La déviation du faisceau** qui est provoquée par l'action de champ électrique et même magnétique.
+\item **La visualisation de signaux électriques** sur l'écran fluorescent grâce à un balayage contrôlé.
+\end{itemize}
   
 ## 1.2 Manipulation 1 - Déviation électrique du faisceau électronique
-### 1.2.1 Rappels théoriques 
+
+### 1.2.1 Rappels théoriques
+
 #### La génération des électrons
   
 Les électrons sont produits par **une émission themoïonique** à partir d'une cathode chauffée. 
@@ -101,7 +107,6 @@ Le tube est équipé de 2 plaques de déviation électrostatiques. Cette paire d
 
 Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables. 
 
-
 #### Vitesse des électrons  
   
 On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$ 
@@ -113,9 +118,10 @@ Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \t
 On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$ 
 
 
+## 3. Formes de lissajous
 
+### 3.1 Introduction
 
+// fais une intro de lissajousS
 
-
-
-
+Les formes de Lissajous tiennent leurs noms du physicien Jules Antoine Lissajous. Il 
