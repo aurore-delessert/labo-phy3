@@ -78,3 +78,44 @@ $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]   (2)$$
 
 Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{champ électrique} [V/m] \\ \vec{v} = \text{vitesse de la particule} [m/s] \\ \vec{B} = \text{champ magnétique} [T] \end{cases}$
 
+\newpage
+## 1. Expérience 1 - Faisceau d'électron (Canon à électrons)
+### 1.1 Introduction 
+Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que : 
+
+- **L'accélération des électrons** qui subissent l'effet d'un champ électrique axial (le canon à électrons). 
+- **La déviation du faisceau** qui est provoquée par l'action de champ électrique et même magnétique. 
+- **La visualisation de signaux électriques** sur l'écran fluorescent grâce à un balayage contrôlé. 
+  
+## 1.2 Manipulation 1 - Déviation électrique du faisceau électronique
+### 1.2.1 Rappels théoriques 
+#### La génération des électrons
+  
+Les électrons sont produits par **une émission themoïonique** à partir d'une cathode chauffée. 
+"Une émission thermoïonique (ou émission thermoélectronique) est un flux d'électrons provenant d'un métal ou d'un oxyde métallique, qui est provoqué par les vibrations des atomes dues à l'énergie thermique lorsque ceux-ci parviennent à surmonter les forces électrostatiques." (source : Wikipedia)
+Le chauffage diminue la barrière de potentiel et permet aux électrons de s'échapper de la surface. Un **cylindre de Wehnelt**, polarisé de quelques dizaines de volts encore plus négativement que la cathode, repousse les électrons émis hors axe et les focalise en faisant un point de croissement sur l'axe. Une **anode** est placée à environ 10mm plus loin, portée à une tension positive par rapport à la cathode, attire et accélère les électrons à travers l'ouverture centrale. 
+
+#### Le rôle des plaques de déviation
+  
+Le tube est équipé de 2 plaques de déviation électrostatiques. Cette paire de plaques latérale génère un champ électrique transverse $\vec{E}$, qui exercce sur les électrons une force $\vec{F} = q \cdot \vec{E}$. Cette force change la direction du faisceau perpendiculairement à son axe. Pour réaliser cette déviation latérale (droite ou gauche) les plaques sont polarisée de manière différentielle (+V ou -V) ce qui permet de modifier la trajectoire du faisceau sans toucher à son énergie. Contrairement à la déviation magnétique $\vec{F} = q \, \vec{v} \times \vec{E}$, qui sera étudié par la suite, la déviation électrostatique agit directement dans la direction du champ imposé entre les plaques.
+
+Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables. 
+
+
+#### Vitesse des électrons  
+  
+On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$ 
+
+#### Equation de la déviation électrostatique  
+  
+Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \text{longueur de la bobine} [m] \\ D = \text{distance entre la sortie des plaques et l'écran} [m] \\ V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ e = \text{charge d'un électron} [C] \\ m_e = \text{masse d'un électron} [kg] \end{cases}$
+
+On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$ 
+
+
+
+
+
+
+
+
