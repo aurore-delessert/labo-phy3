@@ -177,6 +177,145 @@ Pour commencer, nous avons décider de vérifier la polarisation du champ d'une 
 
 ### 3.1 Introduction
 
-// fais une intro de lissajousS
+Les formes de Lissajous tiennent leurs noms du physicien Jules Antoine Lissajous. Il a étudié les mouvements vibratoires et a découvert que lorsque deux mouvements sinusoïdaux sont combinés, ils peuvent créer des figures géométriques complexes. Ces figures sont obtenues en traçant la trajectoire en X et Y d'un point en fonction du temps, où chaque axe représente un mouvement sinusoïdal différent.
 
-Les formes de Lissajous tiennent leurs noms du physicien Jules Antoine Lissajous. Il 
+### 3.2 Équations des mouvements
+
+Les mouvements en X et Y sont décrits par les équations suivantes :
+
+\begin{itemize}
+\item Mouvement en X : $x(t) = A_x \sin(\omega_x t + \phi_x)$
+\item Mouvement en Y : $y(t) = A_y \sin(\omega_y t + \phi_y)$
+\end{itemize}
+
+Toutes les figures de Lissajous sont caractérisées par le rapport des fréquences (et donc des pulsations) $\dfrac{\omega_x}{\omega_y}$ et le déphasage entre les deux mouvements $\Delta \phi = \phi_x - \phi_y$.
+
+La figure la plus simple est obtenue lorsque les pulsations sont égales ($\omega_x = \omega_y$) et le déphasage est nul ($\Delta \phi = 0$), ce qui donne une ligne droite diagonale.
+
+![Figure de Lissajous diagonale](images/lissajous_diagonal.png)
+
+### 3.3 Exemples de figures de Lissajous
+
+#### 3.3.1 Variations des amplitudes
+
+Voici quelques exemples de variation d’amplitude avec une phase et fréquence identique :  
+
+\centering
+
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/lissajous_2.png}
+  \captionof{figure}{Amplitude de Y plus grande que celle de X}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/lissajous_3.png}
+  \captionof{figure}{Amplitude de X plus grande que celle de Y}
+\end{minipage}
+\raggedright
+
+
+#### 3.3.2 Variations du déphasage
+
+Voici quelques exemples de variation de déphasage avec des amplitudes et fréquences identiques :  
+
+\centering
+
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/lissajous_4.png}
+  \captionof{figure}{Déphasage de $\dfrac{\pi}{3}$}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/lissajous_5.png}
+  \captionof{figure}{Déphasage de $\dfrac{\pi}{2}$}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/lissajous_6.png}
+  \captionof{figure}{Déphasage de $\dfrac{\pi}{3}$ en $x$ et $\dfrac{\pi}{2}$ en $y$}
+\end{minipage}
+\raggedright
+
+
+#### 3.3.3 Variations du rapport des fréquences
+
+Pour trouver le rapport des fréquences, on peut compter le nombre de pics dans chaque direction. Le rapport des fréquences est alors donné par le ratio du nombre de pics en X sur le nombre de pics en Y.
+
+Voici quelques exemples de variation du rapport des fréquences avec des amplitudes et déphasages identiques :
+
+\centering
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_1-2.png}
+  \captionof{figure}{ratio 1:2}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_1-6.png}
+  \captionof{figure}{ratio 1:6}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_3-1.png}
+  \captionof{figure}{ratio 3:1}
+\end{minipage}
+
+\centering
+
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_3-2.png}
+  \captionof{figure}{ratio 3:2}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_4-3.png}
+  \captionof{figure}{ratio 4:3}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/ratio_4-7.png}
+  \captionof{figure}{ratio 4:7}
+\end{minipage}
+\raggedright
+
+### 3.4 Parallèle avec le canon à électrons
+
+Le canon à électrons utilise des champs électriques et magnétiques pour dévier le faisceau d'électrons (voir partie 2). En appliquant des tensions alternatives avec des générateurs de signaux aux bobines de déviation horizontales et verticales, on peut créer des mouvements sinusoïdaux similaires à ceux décrits par les équations des figures de Lissajous. Ainsi, en ajustant les fréquences et les phases des tensions appliquées, on peut obtenir des figures de Lissajous sur l'écran du tube cathodique, permettant d'analyser les signaux électriques de manière visuelle.
+
+Voici des figures de Lissajous obtenues avec le canon à électrons :
+
+\centering
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/labo-3-4.jpg}
+  \captionof{figure}{ratio 3:4}
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/labo-2-3.jpg}
+  \captionof{figure}{ratio 2:3}
+\end{minipage}
+\raggedright
+
+On remarque que les figures obtenues avec le canon à électrons sont similaires à celles générées mathématiquement, confirmant ainsi la relation entre les mouvements sinusoïdaux et les figures de Lissajous.
+
+Avec le rapport de fréquence $\dfrac{200Hz}{150Hz} = \dfrac{4}{3}$, on obtient une figure de Lissajous correspondant au ratio 4:3, on voit bien les $4$ pics en vertical et les $3$ pics en horizontal.
+Avec le rapport de fréquence $\dfrac{200Hz}{100Hz} = \dfrac{2}{3}$, on obtient une figure de Lissajous correspondant au ratio 2:3, on voit bien les $3$ pics en vertical et les $2$ pics en horizontal.
+
+Ces images confirment bien le lien entre les figures de Lissajous et la déviation des électrons par des champs électriques alternatifs ainsi que le rapport entre les fréquences des tensions appliquées et la forme obtenue.
+
+## 3.5 Conclusion
+
+Les figures de Lissajous offrent une représentation visuelle fascinante des interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, on peut générer une multitude de formes géométriques complexes. Ces figures ne sont pas seulement esthétiques, elles ont également des applications pratiques en physique et en ingénierie, notamment dans l'analyse des signaux électriques à l'aide d'oscilloscopes et de canons à électrons. Comprendre les principes sous-jacents aux figures de Lissajous permet d'approfondir notre connaissance des phénomènes vibratoires et des interactions dynamiques dans divers systèmes physiques.
+
+Plus précisement, cette partie de labo nous à permis de voir une application concrète de la déviation des électrons par des champs électriques alternatifs, et de comprendre comment les anciens oscilloscopes fonctionnaient pour analyser des signaux électriques.
