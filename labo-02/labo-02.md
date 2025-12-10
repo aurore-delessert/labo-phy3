@@ -173,6 +173,7 @@ On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
 
+
 ## 3. Formes de lissajous
 
 ### 3.1 Introduction
