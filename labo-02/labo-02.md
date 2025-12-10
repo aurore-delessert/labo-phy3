@@ -7,6 +7,12 @@ header-includes:
   - \fancyhead[R]{Phy3-Labo 02}
   - \fancyfoot[C]{Page \thepage}
   - \usepackage{graphicx}
+  - \usepackage{tikz}
+  - \usepackage{pgfplots}
+  - \pgfplotsset{compat=newest}
+  - \usetikzlibrary{arrows.meta}
+  - \usepackage{amsmath}
+  - \usepackage{capt-of}
 ---
 
 \includegraphics[width=0.25\textwidth]{images/heig-logo.png}
