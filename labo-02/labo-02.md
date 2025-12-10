@@ -62,13 +62,13 @@ Le faisceau est généré et focalisé sous vide dans un tube cathodique (dit au
 Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du faisceau d’électrons par le champ magnétique résulte le long l’axe verticale, on peut alimenter la bobine avec un signal électrique que l’on souhaite représenter en fonction du temps, simultanément à un balayage horizontal du faisceau, et ainsi rendre visible le signal électrique sur l’écran fluorescent comme sur un oscilloscope.
 
 ## Matériel utilisé & Caractéristiques techniques
-Tout au long de notre laboratoire, nous allons utiliser le matériel suivant : 
+Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 
   - Le canon à électron montré en figure 1 
-  - Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron. 
-  - 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage. 
+  - Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron.
+  - 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage.
   - 3 Bobines
-  - Une alimentation spécifique pour le laboratoire. 
+  - Une alimentation spécifique pour le laboratoire.
 
 Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte :
 
@@ -119,9 +119,9 @@ Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{c
 
 \newpage
 
-## 1. Expérience 1 - Faisceau d'électron (Canon à électrons)
+## 1 Manipulation 1 - Faisceau d'électron (Canon à électrons)
 
-### 1.0 Introduction
+### 1.1 Introduction
 
 Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que :
 
@@ -131,39 +131,42 @@ Cette expérience a pour but d'observer la formation et la déviation d'un faisc
 \item \textbf{La visualisation de signaux électriques} sur l'écran fluorescent grâce à un balayage contrôlé.
 \end{itemize}
 
-## 1.1 Prise en main & Calibration du système 
+### 1.2 Prise en main & Calibration du système
+
 Dans le but de pouvoir mieux comprendre comment régler le système et de réaliser des mesures précises et plus simple à analyser, nous avons calibré notre oscilloscope en déterminant la tension de Wehnelt. 
 
-### 1.1.1 Méthode de mesure 
-Afin de pouvoir réaliser ce laboratoire avec une meilleurs visibilité des mesures, nous avons : 
+#### 1.2.1 Méthode de mesure
+
+Afin de pouvoir réaliser ce laboratoire avec une meilleurs visibilité des mesures, nous avons :
 \begin{itemize}
-\item Fixer une tension anodique à 250V 
-\item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V. 
-\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aiments qui se situaient sous l'écran comme montré sur la photo ci-dessous 
+\item Fixer une tension anodique à 250V
+\item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V.
+\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aiments qui se situaient sous l'écran comme montré sur la photo ci-dessous.
 \end{itemize}
 
 ![Aiments](images/Aiment%20sur%20oscilloscope.png){width=300px}
 
-En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de 18 $\pm$ 0,2V 
+En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de 18 $\pm$ 0,2V.
   
-## 1.2 Manipulation 1 - Déviation électrique du faisceau électronique
+## 2 Manipulation 1 - Déviation électrique du faisceau électronique
 
-### 1.2.1 Rappels théoriques
+### 2.1 Rappels théoriques
 
 #### La génération des électrons
-Les électrons sont produits par **une émission themoïonique** à partir d'une cathode chauffée. 
+
+Les électrons sont produits par **une émission themoïonique** à partir d'une cathode chauffée.
 "Une émission thermoïonique (ou émission thermoélectronique) est un flux d'électrons provenant d'un métal ou d'un oxyde métallique, qui est provoqué par les vibrations des atomes dues à l'énergie thermique lorsque ceux-ci parviennent à surmonter les forces électrostatiques." (source : Wikipedia)
-Le chauffage diminue la barrière de potentiel et permet aux électrons de s'échapper de la surface. Un **cylindre de Wehnelt**, polarisé de quelques dizaines de volts encore plus négativement que la cathode, repousse les électrons émis hors axe et les focalise en faisant un point de croissement sur l'axe. Une **anode** est placée à environ 10mm plus loin, portée à une tension positive par rapport à la cathode, attire et accélère les électrons à travers l'ouverture centrale. 
+Le chauffage diminue la barrière de potentiel et permet aux électrons de s'échapper de la surface. Un **cylindre de Wehnelt**, polarisé de quelques dizaines de volts encore plus négativement que la cathode, repousse les électrons émis hors axe et les focalise en faisant un point de croissement sur l'axe. Une **anode** est placée à environ 10mm plus loin, portée à une tension positive par rapport à la cathode, attire et accélère les électrons à travers l'ouverture centrale.
 
 #### Le rôle des plaques de déviation
   
 Le tube est équipé de 2 plaques de déviation électrostatiques. Cette paire de plaques latérale génère un champ électrique transverse $\vec{E}$, qui exercce sur les électrons une force $\vec{F} = q \cdot \vec{E}$. Cette force change la direction du faisceau perpendiculairement à son axe. Pour réaliser cette déviation latérale (droite ou gauche) les plaques sont polarisée de manière différentielle (+V ou -V) ce qui permet de modifier la trajectoire du faisceau sans toucher à son énergie. Contrairement à la déviation magnétique $\vec{F} = q \, \vec{v} \times \vec{E}$, qui sera étudié par la suite, la déviation électrostatique agit directement dans la direction du champ imposé entre les plaques.
 
-Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables. 
+Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables.
 
 #### Vitesse des électrons  
   
-On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$ 
+On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$
 
 #### Equation de la déviation électrostatique  
   
@@ -171,9 +174,9 @@ Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \t
 
 On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$
 
-### 1.2.2 Calibration
+### 2.2 Calibration
 
-## 1.3 Manipulation 2 - Déviation magnétique du faisceau électronique
+## 2 Manipulation 2 - Déviation magnétique du faisceau électronique
 
 ### 1.3.3 Mesure et résultats
 
@@ -326,3 +329,125 @@ Ces images confirment bien le lien entre les figures de Lissajous et la déviati
 Les figures de Lissajous offrent une représentation visuelle fascinante des interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, on peut générer une multitude de formes géométriques complexes. Ces figures ne sont pas seulement esthétiques, elles ont également des applications pratiques en physique et en ingénierie, notamment dans l'analyse des signaux électriques à l'aide d'oscilloscopes et de canons à électrons. Comprendre les principes sous-jacents aux figures de Lissajous permet d'approfondir notre connaissance des phénomènes vibratoires et des interactions dynamiques dans divers systèmes physiques.
 
 Plus précisement, cette partie de labo nous à permis de voir une application concrète de la déviation des électrons par des champs électriques alternatifs, et de comprendre comment les anciens oscilloscopes fonctionnaient pour analyser des signaux électriques.
+\newpage
+
+## 4 Mesure du champ B
+
+### 4.1 Introduction
+
+Pour cette manipulation, l'objectif était de pouvoir étudier la génération et la mesure du champ magnétique produit par des bobines (ou des solénoïdes) et aussi comprendre plus en détail
+
+### 4.2 Rappels théories
+
+#### Solénoïde
+
+UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
+
+#### Champ magnétique dans un solénoïde
+
+Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinire, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
+$$ B = \dfrac{{\mu}_{0} N I}{L} [T]         (20)$$
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
+
+Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
+
+Pour illustrer ce cas, voici un schéma :
+
+![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png)
+
+La formule pour le champ magnétique devient :
+$$ B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T] $$
+
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
+
+Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
+
+![Mesure hors bobine](images/Mesure%20hors%20bobine.png)
+
+$$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T] $$
+
+$$
+\alpha_{1} = \arctan\left(\frac{R}{x + \frac{L}{2}}\right)
+$$
+
+$$
+\alpha_{2} = \arctan\left(\frac{R}{x + L}\right)
+$$
+
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde}  \\ \alpha_{1}, \alpha_{2}  = \text{2 anlges (voir schéma ci-dessus) [rad] } \end{cases}$
+
+Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I.
+
+![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
+
+### 4.3 Calculs des incertitudes
+
+Nous allons réaliser les incertitudes par rapport à la formule :
+$$
+\left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
+$$
+
+la formule simplifiée donne
+$$
+\Delta B = B \cdot \sqrt{ \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
+$$
+
+Formule suivante :
+
+On commence avec les angles:
+$$
+\Delta \alpha_{1} = \sqrt{
+\left(\frac{ \Delta R }{(x+\tfrac{L}{2})(1+u_1^2)}\right)^2
++
+\left(\frac{ R\,\Delta x }{(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
++
+\left(\frac{ R\,\Delta L }{2\,(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
+}
+\quad \text{avec } u_1=\frac{R}{x+\tfrac{L}{2}}
+$$
+
+$$
+\Delta \alpha_{2} = \sqrt{
+\left(\frac{ \Delta R }{(x+L)(1+u_2^2)}\right)^2
++
+\left(\frac{ R\,\Delta x }{(x+L)^2(1+u_2^2)}\right)^2
++
+\left(\frac{ R\,\Delta L }{(x+L)^2(1+u_2^2)}\right)^2
+}
+\quad \text{avec } u_2=\frac{R}{x+L}
+$$
+
+Avec les valeurs des incertitudes sur les angles, nous pouvons passer à la formule suivante, voici la formule l'incertitude relative :
+
+$$
+\left( \frac{\Delta B}{B} \right)^2 =
+\left( \frac{\Delta N}{N} \right)^2 +
+\left( \frac{\Delta I}{I} \right)^2 +
+\left( \frac{\Delta L}{L} \right)^2 +
+\left(
+\frac{
+\sin(\alpha_1)\,\Delta \alpha_1 +
+\sin(\alpha_2)\,\Delta \alpha_2
+}{
+\cos(\alpha_1) - \cos(\alpha_2)
+}
+\right)^2
+$$
+
+et voici l'incertitude absolue:
+
+$$
+\Delta B = B \cdot \sqrt{
+\left( \frac{\Delta N}{N} \right)^2 +
+\left( \frac{\Delta I}{I} \right)^2 +
+\left( \frac{\Delta L}{L} \right)^2 +
+\left(
+\frac{
+\sin(\alpha_1)\,\Delta \alpha_1 +
+\sin(\alpha_2)\,\Delta \alpha_2
+}{
+\cos(\alpha_1) - \cos(\alpha_2)
+}
+\right)^2
+}
+$$
