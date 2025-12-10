@@ -67,7 +67,7 @@ Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
   - Le canon à électron montré en figure 1 
   - Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron. 
   - 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage. 
-  - 3 Bobines 
+  - 3 Bobines
   - Une alimentation spécifique pour le laboratoire. 
 
 Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte :
