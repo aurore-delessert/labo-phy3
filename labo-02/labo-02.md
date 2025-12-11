@@ -101,62 +101,25 @@ Avec:
 
 \newpage
 
-## Partie théorique
+## Prise en main & Calibration du système
 
-### Rappel des formules
-
-#### Bobine (solénoïde)
-
-![solénoïde](images/solenoide.png)
-
-Champs d'induction magnétique créé par une bobine :
-
-$$B = \dfrac{{\mu}_{0} N I}{L} [T]    (1)$$
-
-Avec : $\begin{cases} \mu_{0} = 4 \pi \times 10^{-7} [Vs/Am] \\ N = \text{nombre de spires} \\ I = \text{courant traversant la bobine} [A] \\ L = \text{longueur de la bobine} [m] \end{cases}$
-
-#### Force de Lorentz
-
-Force exercée sur une particule chargée en mouvement dans un champ magnétique :
-
-$$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]   (2)$$
-
-Avec : $\begin{cases} q = \text{charge de la particule} [C] \\ \vec{E} = \text{champ électrique} [V/m] \\ \vec{v} = \text{vitesse de la particule} [m/s] \\ \vec{B} = \text{champ magnétique} [T] \end{cases}$
-
-\newpage
-
-## 1 Manipulation 1 - Faisceau d'électron (Canon à électrons)
-
-### 1.1 Introduction
-
-Cette expérience a pour but d'observer la formation et la déviation d'un faisceau d'électrons dans un tube cathodique. Différents phénomènes seront observées tels que :
-
-\begin{itemize}
-\item \textbf{L'accélération des électrons} qui subissent l'effet d'un champ électrique axial (le canon à électrons).
-\item \textbf{La déviation du faisceau} qui est provoquée par l'action de champ électrique et même magnétique.
-\item \textbf{La visualisation de signaux électriques} sur l'écran fluorescent grâce à un balayage contrôlé.
-\end{itemize}
-
-### 1.2 Prise en main & Calibration du système
-
-Dans le but de pouvoir mieux comprendre comment régler le système et de réaliser des mesures précises et plus simple à analyser, nous avons calibré notre oscilloscope en déterminant la tension de Wehnelt. 
-
-#### 1.2.1 Méthode de mesure
-
-Afin de pouvoir réaliser ce laboratoire avec une meilleurs visibilité des mesures, nous avons :
+Afin de pouvoir réaliser ce laboratoire avec une meilleur visibilité des mesures, nous avons :
 \begin{itemize}
 \item Fixer une tension anodique à 250V
 \item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V.
-\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aimants qui se situaient sous l'écran comme montré sur la photo ci-dessous.
+\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique (c'est-à-dire au maximum au centre), nous avons orienté / tourné les 2 petits aimants qui se situaient sous l'écran comme montré sur la photo ci-dessous.
+\item Dans le but de pouvoir mieux comprendre comment régler le système et de réaliser des mesures précises et plus simple à analyser, nous avons calibré notre oscilloscope en déterminant la tension de Wehnelt.
+
+En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de -18 $\pm$ 0,2V.
 \end{itemize}
 
 ![Aimants](images/Aiment%20sur%20oscilloscope.png){width=300px}
 
-En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de 18 $\pm$ 0,2V.
+\newpage
   
-## 2 Manipulation 1 - Déviation électrique du faisceau électronique
+## 1 Manipulation 1 - Déviation électrique du faisceau électronique
 
-### 2.1 Rappels théoriques
+### 1.1 Rappels théoriques
 
 #### La génération des électrons
 
@@ -235,9 +198,6 @@ Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \t
 
 On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$
 
-### 2.2 Calibration
-
-blablabla
 \newpage
 
 ## 2 Manipulation 2 - Déviation magnétique du faisceau électronique
@@ -265,6 +225,8 @@ Nous remarquons donc que la déviation observée sur l'écran dépend du champ m
 \newpage
 
 ### Rappel Théorique "Solénoïdes"
+
+![solénoïde](images/solenoide.png)
 
 UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
 
@@ -412,7 +374,7 @@ $$
 
 \newpage
 
-### 1.3.3 Mesure et résultats
+### Mesure et résultats
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
 
@@ -431,6 +393,8 @@ Voici les valeurs que nous avons obtenues pendant cette mesure :
 
 ![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20droite.png){width=300px}
 ![Mesure sens 1: bobine à gauche](images/1e%20sens_Bobine%20en%20haut.png){width=300px}
+
+\newpage
 
 ![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20gauche.png){width=300px}
 
@@ -484,6 +448,20 @@ Pour les différentes mesures, voici ce que nous trouvons si nous calculons le c
 |   1    |   153,9 $\mu$ T  | 9,81 $\mu$ T|
 |   2    |   164,2 $\mu$ T  | 6,68 $\mu$ T|
 |   3    |   245,6 $\mu$ T  | 7,88 $\mu$ T|
+
+Pour les résultats des calculs du rayon de courbure, si nous prenons les valeurs constantes :
+$\begin{cases}
+m = 9.109 \times 10^{-31}\ \text{kg} \\
+q = 1.602 \times 10^{-19}\ \text{C}
+\end{cases}$
+comme nous n'avons pas mesuré la bonne tension, nous avons mis de manière arbitraire $V_a$ = 250 V.
+Nous trouvons :
+
+| Mesure | Tension | Champ magnétique | Position capteur |   Rayon de courbure   | $\Delta R$ |
+|:------:|:-------:|:----------------:|:----------------:|:---------------------:|:----------:|
+|   1    |  250    | 155,4 $\mu$ T    |  hors bobine     | 0,343 [m] = 34,3 [cm] |  9,3 [cm]  |
+|   2    |  250    | 166,4 $\mu$ T    |  hors bobine     | 0,324 [m] = 32,4 [cm] |  9,7 [cm]  |
+|   3    |  250    | 247,0 $\mu$ T    |  centre bobine   | 0,218 [m] = 21,8 [cm] |  11,1 [cm] |
 
 \newpage
 
@@ -633,13 +611,3 @@ Ces images confirment bien le lien entre les figures de Lissajous et la déviati
 Les figures de Lissajous offrent une représentation visuelle fascinante des interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, on peut générer une multitude de formes géométriques complexes. Ces figures ne sont pas seulement esthétiques, elles ont également des applications pratiques en physique et en ingénierie, notamment dans l'analyse des signaux électriques à l'aide d'oscilloscopes et de canons à électrons. Comprendre les principes sous-jacents aux figures de Lissajous permet d'approfondir notre connaissance des phénomènes vibratoires et des interactions dynamiques dans divers systèmes physiques.
 
 Plus précisement, cette partie de labo nous à permis de voir une application concrète de la déviation des électrons par des champs électriques alternatifs, et de comprendre comment les anciens oscilloscopes fonctionnaient pour analyser des signaux électriques.
-\newpage
-
-## 4 Mesure du champ B
-
-### 4.1 Introduction
-
-Pour cette manipulation, l'objectif était de pouvoir étudier la génération et la mesure du champ magnétique produit par des bobines (ou des solénoïdes) et aussi comprendre plus en détail
-
-### 4.2 Rappels théories
-
