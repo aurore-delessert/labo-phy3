@@ -13,7 +13,7 @@ header-includes:
   - \usetikzlibrary{arrows.meta}
   - \usepackage{amsmath}
   - \usepackage{capt-of}
-  - \userpackage{booktabs}
+  - \usepackage{booktabs}
 ---
 
 \includegraphics[width=0.25\textwidth]{images/heig-logo.png}
@@ -344,12 +344,12 @@ $$
 
 Nous allons réaliser les incertitudes par rapport à la formule : $B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T](24)$
 $$
-\left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
+\left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
 $$
 
 La formule simplifiée et finale donne
 $$
-\Delta B = B \cdot \sqrt{ \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
+\Delta B = B \cdot \sqrt{ \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
 $$
 
 Maintenant, les incertitudes pour la formule : $B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T](25)$
@@ -381,7 +381,6 @@ Avec les valeurs des incertitudes sur les angles, nous pouvons passer à la form
 
 $$
 \left( \frac{\Delta B}{B} \right)^2 =
-\left( \frac{\Delta N}{N} \right)^2 +
 \left( \frac{\Delta I}{I} \right)^2 +
 \left( \frac{\Delta L}{L} \right)^2 +
 \left(
@@ -398,7 +397,6 @@ et voici l'incertitude absolue:
 
 $$
 \Delta B = B \cdot \sqrt{
-\left( \frac{\Delta N}{N} \right)^2 +
 \left( \frac{\Delta I}{I} \right)^2 +
 \left( \frac{\Delta L}{L} \right)^2 +
 \left(
@@ -418,20 +416,23 @@ $$
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
 
-Concernant les résultats suivant, les incertitudes des mesures de u et i sont repectivement de $\pm$ 0,5 [V] et 0,3 [A]. Ces dernières ont été déterminée en analysant quel digit du multimètre n'était pas stable et en regardant de combien de dernier variait. 
+Concernant les résultats suivant, les incertitudes des mesures de u et i sont repectivement de $\pm$ 0,005 [V] et $\pm$ 0,003 [A]. Ces dernières ont été déterminées en analysant quel digit du multimètre n'était pas stable et en regardant de combien ce dernier variait.
+Afin d'éviter de ralonger le rapport, nous avons réalisé les calculs avec les valeurs mesurées et juste reporté les valeurs trouvées.
 
 #### Mesure 1e sens
 
 Nous avons décidé de faire 2 calques différents. Le premier avec un premier sens du courant et le 2e dans l'autre sens. Cela nous a permis de mieux comprendre et mieux voir le changement de direction. Pour ce 1e sens, le courant va de la borne jaune pour 600 spires ou noire pour 300 spires à la borne verte.
 Ce que nous pouvons ajouté comme remarque visuelle est que dans chaque cas, les points partent dans une autre direction en s'éloignant du centre de l'écran.
+
 ![1e sens bobine](images/1e%20sens%20bobine.png)
 
 Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
 Voici les valeurs que nous avons obtenues pendant cette mesure :
 
-![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20droite.png)
-![Mesure sens 1: bobine à gauche](images/1e%20sens_Bobine%20en%20haut.png)
-![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20gauche.png)
+![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20droite.png){width=300px}
+![Mesure sens 1: bobine à gauche](images/1e%20sens_Bobine%20en%20haut.png){width=300px}
+
+![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20gauche.png){width=300px}
 
 Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
 
@@ -452,9 +453,10 @@ Pour le 2e sens, le courant va de la borne verte à la borne verte à la borne j
 Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
 Voici les valeurs que nous avons obtenues pendant cette mesure :
 
-![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20droite.png)
-![Mesure sens 2: bobine à gauche](images/2e%20sens_Bobine%20en%20haut.png)
-![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20gauche.png)
+![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20droite.png){width=300px}
+![Mesure sens 2: bobine en haut](images/2e%20sens_Bobine%20en%20haut.png){width=300px}
+
+![Mesure sens 2: bobine à gauche](images/2e%20sens_Bobine%20à%20gauche.png){width=300px}
 
 Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
 
@@ -462,16 +464,26 @@ Pour mieux comprendre la trajectoire du faisceau, voici un croquis qui met en lu
 
 ![Trajectoire 1e sens](images/1e%20sens%20trajectoire.png)
 
+\newpage
+
 #### Analyse numérique des résultats
 
-Voici les résultats des mesures du champ magnétique à différentes tensions et courants :
-(chaque mesure est faite avec 600 spires)
+Pour commencer les analyses numériques, voici les différentes valeurs du champs que nous avons mesuré :
+Nous nous sommes rendues compte que les valeurs de tension sont totalement fausses car nous devions avoir la tension $V_a$ et nous avons la tension aux bornes de la bobine.
 
-| Mesure | Tension | Courant | Champ magnétique |
-|:------:|:-------:|:-------:|:----------------:|
-|   1    |  2,184  |  0,649  | 155,4 $\mu$ T    |
-|   2    |  2,344  |  1.103  | 166,4 $\mu$ T    |
-|   3    |  2,441  |  1,204  | 258,2 $\mu$ T    |
+| Mesure | Tension | Courant | Champ magnétique | Nombre de spires | Position capteur |
+|:------:|:-------:|:-------:|:----------------:|:----------------:|:----------------:|
+|   1    |  2,184  |  0,649  | 155,4 $\mu$ T    |       300        |  hors bobine     |
+|   2    |  2,344  |  1.103  | 166,4 $\mu$ T    |       600        |  hors bobine     |
+|   3    |  2,441  |  0,020  | 247,0 $\mu$ T    |       600        |  centre bobine   |
+
+Pour les différentes mesures, voici ce que nous trouvons si nous calculons le champ magnétique avec les incertitudes:
+
+| Mesure | Champ magnétique | $\Delta B$  |
+|:------:|:----------------:|:-----------:|
+|   1    |   153,9 $\mu$ T  | 9,81 $\mu$ T|
+|   2    |   164,2 $\mu$ T  | 6,68 $\mu$ T|
+|   3    |   245,6 $\mu$ T  | 7,88 $\mu$ T|
 
 \newpage
 
