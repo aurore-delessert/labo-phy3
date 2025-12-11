@@ -76,7 +76,7 @@ Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte :
 
 \begin{itemize}
-\item Une tension anodique ($U_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc. 
+\item Une tension anodique ($V_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc. 
 \item Un courant anodique de maximum 1 mA.
 \item une tension de chauffage entre 6 et 12 V
 \item Une tension en dents de scie de 100 V avec une fréquence entre 3,5 et 650 Hz.
@@ -202,7 +202,7 @@ $$D = \dfrac{q V_p l L}{m_e d \left( \dfrac{2 q V_a}{m_e} \right)} = \dfrac{V_p 
 
 La déviation $D$ dépend linéairement de $V_p$, $l$, $L$ et inversement de $d$ et $V_a$. En utilisant la formule de propagation des incertitudes pour une fonction de plusieurs variables, on trouve que l'incertitude relative sur $D$ est donnée par :
 
-$$\dfrac{\Delta D}{D} = \dfrac{\Delta V_p}{V_p} + \dfrac{\Delta l}{l} + \dfrac{\Delta L}{L} + \dfrac{\Delta d}{d} + \dfrac{\Delta V_a}{V_a}\text{ }(8)$$ 
+$$\dfrac{\Delta D}{D} = \dfrac{\Delta V_p}{V_p} + \dfrac{\Delta l}{l} + \dfrac{\Delta L}{L} + \dfrac{\Delta d}{d} + \dfrac{\Delta V_a}{V_a}\text{ }(8)$$
 
 #### Application numérique
 
@@ -248,24 +248,30 @@ blablabla
 La déviation magnétique d'un faisceau d'électrons permet d'étudier l'effet d'un champ magnétique sur des charges qui se déplacent. Quand on faisceau d'électrons se déplace dans un champ magnétique $\vec{B}$ qui est perpendiculaire à sa vitesse $\vec{v}$, ce dernier subit une force de Lorentz qui est donnée par la formule :  
 $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]$$  
 dans laquelle q est la charge d'un électron. Cette fameuse force, qui est perpendiculaire à la direction du déplacement, provoque une trajectoire circulaire dont le rayon R peut être déterminé par l'équilibre entre la force centripète et la force magnétique, l'égalité donne :  
-$$\frac{mv^2}{R} = qvB \quad \Rightarrow \quad R = \frac{mv}{qB}$$  
+$$\frac{mv^2}{R} = qvB \quad \Rightarrow \quad R = \frac{mv}{qB} (20)$$  
 avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ R = \text{rayon} [m] \\ q = \text{charge de la particule} [C] \\ B = \text{champ électrique} [V/m]\end{cases}$
 
-En utilisant la formule de l'énergie, on peut relier la vitesse de l'électron à la tension anodique U_a par :  
-$$ \frac{1}{2}mv^{2} = q U_a \quad \Rightarrow \quad v = \sqrt{\frac{2qU_a}{m}} $$
-avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ q = \text{charge de la particule} [C] \\ U_a = \text{tension anodique} [V]\end{cases}$
+En utilisant la formule de l'énergie, on peut relier la vitesse de l'électron à la tension anodique V_a par :  
+$$ \frac{1}{2}mv^{2} = q V_a \quad \Rightarrow \quad v = \sqrt{\frac{2qV_a}{m}} (21)$$
+avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ q = \text{charge de la particule} [C] \\ V_a = \text{tension anodique} [V]\end{cases}$
 
-Nous remarquons donc que la déviation observée sur l'écran
+Maintenant, si on veut trouver le rayon de courbure, il faut prendre l'équation (21) et la mettre dans l'équation (20) ce qui nous donne :  
+$$R = \frac{m}{qB} \cdot \sqrt{\frac{2qV_a}{m}} =\boxed{\frac{1}{B} \sqrt{\frac{2mV_a}{q}}} (22) $$
+avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ R = \text{rayon de courbure} [m] \\ q = \text{charge de la particule} [C] \\ B = \text{champ électrique} [V/m] \\ V_a = \text{tension anodique} [V] \end{cases}$
+
+Nous remarquons donc que la déviation observée sur l'écran dépend du champ magnétique appliqué, de la tension d'accélération des électrons et également de la position et de l'orientation de la bobine. Cela veut donc dire que si le courant change de sens dans la bobine ou si nous déplaçons cette dernière, la déviation sera modifiée.
+
+\newpage
 
 ### Rappel Théorique "Solénoïdes"
 
 UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
 
-#### Champ magnétique dans un solénoïde
+#### Champ magnétique dans un solénoïde  
 
 Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinire, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
-$$ B = \dfrac{{\mu}_{0} N I}{L} [T]         (20)$$
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
+$$B = \dfrac{{\mu}_{0} N I}{L} [T](23)$$
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
 
 Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
 
@@ -274,16 +280,17 @@ Pour illustrer ce cas, voici un schéma :
 ![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png)
 
 La formule pour le champ magnétique devient :
-$$ B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T] $$
+$$B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T](24)$$
 
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
 
 Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
 
 ![Mesure hors bobine](images/Mesure%20hors%20bobine.png)
 
-$$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T] $$
+$$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T](25) $$
 
+Nous pouvons calculer les 2 angles à l'aide de la trigonométrie tel que :  
 $$
 \alpha_{1} = \arctan\left(\frac{R}{x + \frac{L}{2}}\right)
 $$
@@ -294,23 +301,57 @@ $$
 
 avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde}  \\ \alpha_{1}, \alpha_{2}  = \text{2 anlges (voir schéma ci-dessus) [rad] } \end{cases}$
 
-Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I.
+Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I. Sur l'image ci-dessous, la longueur de la bobine est noté d alors que nous l'avons appelée L dans les calculs.
 
 ![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
 
-### 4.3 Calculs des incertitudes
+### Calculs des incertitudes
 
-Nous allons réaliser les incertitudes par rapport à la formule :
+Nour allons réaliser les incertitudes pour la formule : $R = \frac{mv}{qB} (20)$  
+Incertitude relative :
+$$
+\left(\frac{\Delta S}{S}\right)^2
+=
+\left(\frac{\Delta B}{B}\right)^2
++
+\frac{1}{4}\left[
+\left(\frac{\Delta m}{m}\right)^2
++
+\left(\frac{\Delta V_a}{V_a}\right)^2
++
+\left(\frac{\Delta q}{q}\right)^2
+\right]
+$$
+
+La formule simplifiée et finale donne
+$$
+\Delta S
+=
+S\cdot
+\sqrt{
+\left(\frac{\Delta B}{B}\right)^2
++
+\frac{1}{4}\left[
+\left(\frac{\Delta m}{m}\right)^2
++
+\left(\frac{\Delta V_a}{V_a}\right)^2
++
+\left(\frac{\Delta q}{q}\right)^2
+\right]
+}
+$$
+
+Nous allons réaliser les incertitudes par rapport à la formule : $B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T](24)$
 $$
 \left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
 $$
 
-la formule simplifiée donne
+La formule simplifiée et finale donne
 $$
 \Delta B = B \cdot \sqrt{ \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
 $$
 
-Formule suivante :
+Maintenant, les incertitudes pour la formule : $B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T](25)$
 
 On commence avec les angles:
 $$
@@ -373,6 +414,8 @@ $$
 ### 1.3.3 Mesure et résultats
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
+
+\newpage
 
 ## 3. Formes de lissajous
 
