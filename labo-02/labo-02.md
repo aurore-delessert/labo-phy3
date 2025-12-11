@@ -62,21 +62,26 @@ Le faisceau est généré et focalisé sous vide dans un tube cathodique (dit au
 Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du faisceau d’électrons par le champ magnétique résulte le long l’axe verticale, on peut alimenter la bobine avec un signal électrique que l’on souhaite représenter en fonction du temps, simultanément à un balayage horizontal du faisceau, et ainsi rendre visible le signal électrique sur l’écran fluorescent comme sur un oscilloscope.
 
 ## Matériel utilisé & Caractéristiques techniques
+
 Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 
-  - Le canon à électron montré en figure 1 
-  - Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron.
-  - 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage.
-  - 3 Bobines
-  - Une alimentation spécifique pour le laboratoire.
+\begin{itemize}
+\item Le canon à électron montré en figure 1 
+\item Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron.
+\item 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage.
+\item 3 Bobines
+\item Une alimentation spécifique pour le laboratoire.
+\end{itemize}
 
 Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte :
 
-- Une tension anodique ($U_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc. 
-- Un courant anodique de maximum 1 mA.
-- une tension de chauffage entre 6 et 12 V
-- Une tension en dents de scie de 100 V avec une fréquence entre 3,5 et 650 Hz.
-- Des bobines de déviation qui ont soit 300 ou 600 spires, avec une résistance interne de 4,2 $\Omega$ et impédance de 6 mH.
+\begin{itemize}
+\item Une tension anodique ($U_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc. 
+\item Un courant anodique de maximum 1 mA.
+\item une tension de chauffage entre 6 et 12 V
+\item Une tension en dents de scie de 100 V avec une fréquence entre 3,5 et 650 Hz.
+\item Des bobines de déviation qui ont soit 300 ou 600 spires, avec une résistance interne de 4,2 $\Omega$ et impédance de 6 mH.
+\end{itemize}
 
 Pour le module de commande, le voici :
 
@@ -141,10 +146,10 @@ Afin de pouvoir réaliser ce laboratoire avec une meilleurs visibilité des mesu
 \begin{itemize}
 \item Fixer une tension anodique à 250V
 \item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V.
-\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aiments qui se situaient sous l'écran comme montré sur la photo ci-dessous.
+\item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique, nous avons orienté / tourné les 2 petits aimants qui se situaient sous l'écran comme montré sur la photo ci-dessous.
 \end{itemize}
 
-![Aiments](images/Aiment%20sur%20oscilloscope.png){width=300px}
+![Aimants](images/Aiment%20sur%20oscilloscope.png){width=300px}
 
 En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de 18 $\pm$ 0,2V.
   
