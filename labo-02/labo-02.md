@@ -13,6 +13,7 @@ header-includes:
   - \usetikzlibrary{arrows.meta}
   - \usepackage{amsmath}
   - \usepackage{capt-of}
+  - \userpackage{booktabs}
 ---
 
 \includegraphics[width=0.25\textwidth]{images/heig-logo.png}
@@ -307,10 +308,10 @@ Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est a
 
 ### Calculs des incertitudes
 
-Nour allons réaliser les incertitudes pour la formule : $R = \frac{mv}{qB} (20)$  
+Nour allons réaliser les incertitudes pour la formule : $R = \frac{1}{B} \sqrt{\frac{2mV_a}{q}}$  
 Incertitude relative :
 $$
-\left(\frac{\Delta S}{S}\right)^2
+\left(\frac{\Delta R}{R}\right)^2
 =
 \left(\frac{\Delta B}{B}\right)^2
 +
@@ -325,9 +326,9 @@ $$
 
 La formule simplifiée et finale donne
 $$
-\Delta S
+\Delta R
 =
-S\cdot
+R \cdot
 \sqrt{
 \left(\frac{\Delta B}{B}\right)^2
 +
@@ -411,9 +412,66 @@ $$
 }
 $$
 
+\newpage
+
 ### 1.3.3 Mesure et résultats
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
+
+Concernant les résultats suivant, les incertitudes des mesures de u et i sont repectivement de $\pm$ 0,5 [V] et 0,3 [A]. Ces dernières ont été déterminée en analysant quel digit du multimètre n'était pas stable et en regardant de combien de dernier variait. 
+
+#### Mesure 1e sens
+
+Nous avons décidé de faire 2 calques différents. Le premier avec un premier sens du courant et le 2e dans l'autre sens. Cela nous a permis de mieux comprendre et mieux voir le changement de direction. Pour ce 1e sens, le courant va de la borne jaune pour 600 spires ou noire pour 300 spires à la borne verte.
+Ce que nous pouvons ajouté comme remarque visuelle est que dans chaque cas, les points partent dans une autre direction en s'éloignant du centre de l'écran.
+![1e sens bobine](images/1e%20sens%20bobine.png)
+
+Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
+Voici les valeurs que nous avons obtenues pendant cette mesure :
+
+![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20droite.png)
+![Mesure sens 1: bobine à gauche](images/1e%20sens_Bobine%20en%20haut.png)
+![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20gauche.png)
+
+Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
+
+Pour mieux comprendre la trajectoire du faisceau, voici un croquis qui met en lumière les différents vecteurs utilisés :
+
+![Trajectoire 1e sens](images/1e%20sens%20trajectoire.png)
+
+Cette trajectoire n'est pas droite car le fait de soumettre un champ magnétique (ou électrique) dévie les électrons de leur trajectoire initiale.
+
+\newpage
+
+#### Mesure 2e sens
+
+Pour le 2e sens, le courant va de la borne verte à la borne verte à la borne jaune pour 600 spires ou noire pour 300 spires. Comme remarqué pour le 1e sens, les points partent toujours dans une autre direction en s'éloignant du centre de l'écran.
+
+![2e sens bobine](images/2e%20sens%20bobine.png)
+
+Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
+Voici les valeurs que nous avons obtenues pendant cette mesure :
+
+![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20droite.png)
+![Mesure sens 2: bobine à gauche](images/2e%20sens_Bobine%20en%20haut.png)
+![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20gauche.png)
+
+Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
+
+Pour mieux comprendre la trajectoire du faisceau, voici un croquis qui met en lumière les différents vecteurs utilisés :
+
+![Trajectoire 1e sens](images/1e%20sens%20trajectoire.png)
+
+#### Analyse numérique des résultats
+
+Voici les résultats des mesures du champ magnétique à différentes tensions et courants :
+(chaque mesure est faite avec 600 spires)
+
+| Mesure | Tension | Courant | Champ magnétique |
+|:------:|:-------:|:-------:|:----------------:|
+|   1    |  2,184  |  0,649  | 155,4 $\mu$ T    |
+|   2    |  2,344  |  1.103  | 166,4 $\mu$ T    |
+|   3    |  2,441  |  1,204  | 258,2 $\mu$ T    |
 
 \newpage
 
