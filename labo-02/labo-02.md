@@ -171,7 +171,7 @@ Pour calculer la déviation, nous allons partir de l'hypothèse que les électro
 
 #### Notations
 
-![Schéma](schema-canon.png){width=400px}
+![Schéma](images/schema-canon.png){width=400px}
 
 $\begin{cases} V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ d = \text{distance entre les plaques} [m] \\ l = \text{longueur des plaques} [m] \\ L = \text{distance entre la sortie des plaques et l'écran} [m] \end{cases}$
 
