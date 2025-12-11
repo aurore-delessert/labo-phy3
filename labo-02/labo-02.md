@@ -169,9 +169,64 @@ Le tube est équipé de 2 plaques de déviation électrostatiques. Cette paire d
 
 Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables.
 
+#### Notations
+
+![Schéma](schema-canon.png){width=400px}
+
+$\begin{cases} V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ d = \text{distance entre les plaques} [m] \\ l = \text{longueur des plaques} [m] \\ L = \text{distance entre la sortie des plaques et l'écran} [m] \end{cases}$
+
 #### Vitesse des électrons  
   
-On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$. Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$
+On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$.
+
+Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$ (1)
+
+#### Déviation horizontale du faisceau
+
+Avec les notations du schéma, on peut calculer la déviation horizontale $D$ du faisceau sur l'écran. 
+
+La force exercée sur l'électron dans la région des plaques est : $F = q E = q \dfrac{V_p}{d}$(2)
+
+L'accélération subie par l'électron dans cette région est donc : $a = \dfrac{F}{m_e} = \dfrac{q V_p}{m_e d}$(3)
+
+Le temps passé par l'électron dans la région des plaques est : $t_1 = \dfrac{l}{v_e}$(4)
+
+La vitesse acquise dans la direction horizontale à la sortie des plaques est donc : $v_x = a t_1 = \dfrac{q V_p}{m_e d} \cdot \dfrac{l}{v_e}$(5)
+Après la sortie des plaques, l'électron continue son mouvement avec une vitesse horizontale constante $v_x$ pendant un temps $t_2 = \dfrac{L}{v_e}$ avant d'atteindre l'écran. La déviation horizontale $D$ sur l'écran est donc : $D = v_x t_2 = \left( \dfrac{q V_p}{m_e d} \cdot \dfrac{l}{v_e} \right) \cdot \dfrac{L}{v_e}$(6)
+
+En remplaçant $v_e$ par son expression (1), on obtient finalement :
+
+$$D = \dfrac{q V_p l L}{m_e d \left( \dfrac{2 q V_a}{m_e} \right)} = \dfrac{V_p l L}{2 d V_a}\text{ }(7)$$
+
+#### Incertitudes sur la déviation
+
+La déviation $D$ dépend linéairement de $V_p$, $l$, $L$ et inversement de $d$ et $V_a$. En utilisant la formule de propagation des incertitudes pour une fonction de plusieurs variables, on trouve que l'incertitude relative sur $D$ est donnée par :
+
+$$\dfrac{\Delta D}{D} = \dfrac{\Delta V_p}{V_p} + \dfrac{\Delta l}{l} + \dfrac{\Delta L}{L} + \dfrac{\Delta d}{d} + \dfrac{\Delta V_a}{V_a}\text{ }(8)$$ 
+
+#### Application numérique
+
+Avec les valeurs suivantes :
+\begin{itemize}
+\item $V_a = 250 \pm 2 V$
+\item $V_p = 100 \pm 1 V$
+\item $l = 0.02 \pm 0.001 m$
+\item $L = 0.178 \pm 0.001 m$
+\item $d = 0.014 \pm 0.001 m$
+\end{itemize}
+
+On peut calculer la déviation $D$ (7) et son incertitude $\Delta D$ (8).
+
+$$D = \dfrac{100 \cdot 0.02 \cdot 0.178}{2 \cdot 0.014 \cdot 250} = 0.05085 m = 50.85 mm$$
+
+$$\dfrac{\Delta D}{D} = \dfrac{1}{100} + \dfrac{0.001}{0.02} + \dfrac{0.001}{0.178} + \dfrac{0.001}{0.014} + \dfrac{2}{250} = 0.141$$
+
+$$\Delta D = 0.141 \cdot 50.85 mm = 7.17 mm$$
+Donc, la déviation du faisceau est $D = 50.85 \pm 7.17 mm$.
+
+#### Analyses des résultats
+
+Lorsque nous appliquons une tension de 100V aux plaques de déviation, nous observons une déviation du faisceau d'environ $55 mm$ sur l'écran, ce qui est en accord avec notre calcul théorique de $50.85 \pm 7.17 mm$. Cette concordance entre la théorie et l'expérience confirme la validité de notre modèle pour la déviation électrostatique des électrons dans le canon à électrons.
 
 #### Equation de la déviation électrostatique  
   
