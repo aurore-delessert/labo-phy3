@@ -181,12 +181,143 @@ On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$
 
 ### 2.2 Calibration
 
+blablabla
+\newpage
+
 ## 2 Manipulation 2 - Déviation magnétique du faisceau électronique
+
+### 2.1 Introduction
+
+### Rappel Théorique "Déviation des électrons"
+
+La déviation magnétique d'un faisceau d'électrons permet d'étudier l'effet d'un champ magnétique sur des charges qui se déplacent. Quand on faisceau d'électrons se déplace dans un champ magnétique $\vec{B}$ qui est perpendiculaire à sa vitesse $\vec{v}$, ce dernier subit une force de Lorentz qui est donnée par la formule :  
+$$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]$$  
+dans laquelle q est la charge d'un électron. Cette fameuse force, qui est perpendiculaire à la direction du déplacement, provoque une trajectoire circulaire dont le rayon R peut être déterminé par l'équilibre entre la force centripète et la force magnétique, l'égalité donne :  
+$$\frac{mv^2}{R} = qvB \quad \Rightarrow \quad R = \frac{mv}{qB}$$  
+avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ R = \text{rayon} [m] \\ q = \text{charge de la particule} [C] \\ B = \text{champ électrique} [V/m]\end{cases}$
+
+En utilisant la formule de l'énergie, on peut relier la vitesse de l'électron à la tension anodique U_a par :  
+$$ \frac{1}{2}mv^{2} = q U_a \quad \Rightarrow \quad v = \sqrt{\frac{2qU_a}{m}} $$
+avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ q = \text{charge de la particule} [C] \\ U_a = \text{tension anodique} [V]\end{cases}$
+
+Nous remarquons donc que la déviation observée sur l'écran
+
+### Rappel Théorique "Solénoïdes"
+
+UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
+
+#### Champ magnétique dans un solénoïde
+
+Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinire, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
+$$ B = \dfrac{{\mu}_{0} N I}{L} [T]         (20)$$
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
+
+Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
+
+Pour illustrer ce cas, voici un schéma :
+
+![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png)
+
+La formule pour le champ magnétique devient :
+$$ B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T] $$
+
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
+
+Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
+
+![Mesure hors bobine](images/Mesure%20hors%20bobine.png)
+
+$$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T] $$
+
+$$
+\alpha_{1} = \arctan\left(\frac{R}{x + \frac{L}{2}}\right)
+$$
+
+$$
+\alpha_{2} = \arctan\left(\frac{R}{x + L}\right)
+$$
+
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde}  \\ \alpha_{1}, \alpha_{2}  = \text{2 anlges (voir schéma ci-dessus) [rad] } \end{cases}$
+
+Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I.
+
+![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
+
+### 4.3 Calculs des incertitudes
+
+Nous allons réaliser les incertitudes par rapport à la formule :
+$$
+\left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
+$$
+
+la formule simplifiée donne
+$$
+\Delta B = B \cdot \sqrt{ \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
+$$
+
+Formule suivante :
+
+On commence avec les angles:
+$$
+\Delta \alpha_{1} = \sqrt{
+\left(\frac{ \Delta R }{(x+\tfrac{L}{2})(1+u_1^2)}\right)^2
++
+\left(\frac{ R\,\Delta x }{(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
++
+\left(\frac{ R\,\Delta L }{2\,(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
+}
+\quad \text{avec } u_1=\frac{R}{x+\tfrac{L}{2}}
+$$
+
+$$
+\Delta \alpha_{2} = \sqrt{
+\left(\frac{ \Delta R }{(x+L)(1+u_2^2)}\right)^2
++
+\left(\frac{ R\,\Delta x }{(x+L)^2(1+u_2^2)}\right)^2
++
+\left(\frac{ R\,\Delta L }{(x+L)^2(1+u_2^2)}\right)^2
+}
+\quad \text{avec } u_2=\frac{R}{x+L}
+$$
+
+Avec les valeurs des incertitudes sur les angles, nous pouvons passer à la formule suivante, voici la formule l'incertitude relative :
+
+$$
+\left( \frac{\Delta B}{B} \right)^2 =
+\left( \frac{\Delta N}{N} \right)^2 +
+\left( \frac{\Delta I}{I} \right)^2 +
+\left( \frac{\Delta L}{L} \right)^2 +
+\left(
+\frac{
+\sin(\alpha_1)\,\Delta \alpha_1 +
+\sin(\alpha_2)\,\Delta \alpha_2
+}{
+\cos(\alpha_1) - \cos(\alpha_2)
+}
+\right)^2
+$$
+
+et voici l'incertitude absolue:
+
+$$
+\Delta B = B \cdot \sqrt{
+\left( \frac{\Delta N}{N} \right)^2 +
+\left( \frac{\Delta I}{I} \right)^2 +
+\left( \frac{\Delta L}{L} \right)^2 +
+\left(
+\frac{
+\sin(\alpha_1)\,\Delta \alpha_1 +
+\sin(\alpha_2)\,\Delta \alpha_2
+}{
+\cos(\alpha_1) - \cos(\alpha_2)
+}
+\right)^2
+}
+$$
 
 ### 1.3.3 Mesure et résultats
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
-
 
 ## 3. Formes de lissajous
 
@@ -344,115 +475,3 @@ Pour cette manipulation, l'objectif était de pouvoir étudier la génération e
 
 ### 4.2 Rappels théories
 
-#### Solénoïde
-
-UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
-
-#### Champ magnétique dans un solénoïde
-
-Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinire, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
-$$ B = \dfrac{{\mu}_{0} N I}{L} [T]         (20)$$
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
-
-Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
-
-Pour illustrer ce cas, voici un schéma :
-
-![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png)
-
-La formule pour le champ magnétique devient :
-$$ B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T] $$
-
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
-
-Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
-
-![Mesure hors bobine](images/Mesure%20hors%20bobine.png)
-
-$$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T] $$
-
-$$
-\alpha_{1} = \arctan\left(\frac{R}{x + \frac{L}{2}}\right)
-$$
-
-$$
-\alpha_{2} = \arctan\left(\frac{R}{x + L}\right)
-$$
-
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde}  \\ \alpha_{1}, \alpha_{2}  = \text{2 anlges (voir schéma ci-dessus) [rad] } \end{cases}$
-
-Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I.
-
-![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
-
-### 4.3 Calculs des incertitudes
-
-Nous allons réaliser les incertitudes par rapport à la formule :
-$$
-\left( \frac{\Delta B}{B} \right)^2 = \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2
-$$
-
-la formule simplifiée donne
-$$
-\Delta B = B \cdot \sqrt{ \left( \frac{\Delta N}{N} \right)^2 + \left( \frac{\Delta I}{I} \right)^2 + \left( \frac{R \cdot \Delta R + l \cdot \Delta l}{R^2 + l^2} \right)^2 }
-$$
-
-Formule suivante :
-
-On commence avec les angles:
-$$
-\Delta \alpha_{1} = \sqrt{
-\left(\frac{ \Delta R }{(x+\tfrac{L}{2})(1+u_1^2)}\right)^2
-+
-\left(\frac{ R\,\Delta x }{(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
-+
-\left(\frac{ R\,\Delta L }{2\,(x+\tfrac{L}{2})^2(1+u_1^2)}\right)^2
-}
-\quad \text{avec } u_1=\frac{R}{x+\tfrac{L}{2}}
-$$
-
-$$
-\Delta \alpha_{2} = \sqrt{
-\left(\frac{ \Delta R }{(x+L)(1+u_2^2)}\right)^2
-+
-\left(\frac{ R\,\Delta x }{(x+L)^2(1+u_2^2)}\right)^2
-+
-\left(\frac{ R\,\Delta L }{(x+L)^2(1+u_2^2)}\right)^2
-}
-\quad \text{avec } u_2=\frac{R}{x+L}
-$$
-
-Avec les valeurs des incertitudes sur les angles, nous pouvons passer à la formule suivante, voici la formule l'incertitude relative :
-
-$$
-\left( \frac{\Delta B}{B} \right)^2 =
-\left( \frac{\Delta N}{N} \right)^2 +
-\left( \frac{\Delta I}{I} \right)^2 +
-\left( \frac{\Delta L}{L} \right)^2 +
-\left(
-\frac{
-\sin(\alpha_1)\,\Delta \alpha_1 +
-\sin(\alpha_2)\,\Delta \alpha_2
-}{
-\cos(\alpha_1) - \cos(\alpha_2)
-}
-\right)^2
-$$
-
-et voici l'incertitude absolue:
-
-$$
-\Delta B = B \cdot \sqrt{
-\left( \frac{\Delta N}{N} \right)^2 +
-\left( \frac{\Delta I}{I} \right)^2 +
-\left( \frac{\Delta L}{L} \right)^2 +
-\left(
-\frac{
-\sin(\alpha_1)\,\Delta \alpha_1 +
-\sin(\alpha_2)\,\Delta \alpha_2
-}{
-\cos(\alpha_1) - \cos(\alpha_2)
-}
-\right)^2
-}
-$$
