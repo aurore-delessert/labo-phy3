@@ -67,7 +67,7 @@ Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du
 Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 
 \begin{itemize}
-\item Le canon à électron montré en figure 1 
+\item Le canon à électron montré en figure 1
 \item Un écran fluorescent affichant à l'aide d'un point vert l'endroit de l'impact du faisceau à électron.
 \item 2 Multimètres qui nous serviront à mesurer la tension et le courant dans le montage.
 \item 3 Bobines
@@ -77,7 +77,7 @@ Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 Pour parler un peu plus en détails des caractéristiques techniques à prendre en compte :
 
 \begin{itemize}
-\item Une tension anodique ($V_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc. 
+\item Une tension anodique ($V_a$) que nous devions choisir entre 200 et 350 Vcc. Nous avons pris 250 $\pm$ 2 Vcc.
 \item Un courant anodique de maximum 1 mA.
 \item une tension de chauffage entre 6 et 12 V
 \item Une tension en dents de scie de 100 V avec une fréquence entre 3,5 et 650 Hz.
@@ -147,7 +147,7 @@ Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \s
 
 #### Déviation horizontale du faisceau
 
-Avec les notations du schéma, on peut calculer la déviation horizontale $D$ du faisceau sur l'écran. 
+Avec les notations du schéma, on peut calculer la déviation horizontale $D$ du faisceau sur l'écran.
 
 La force exercée sur l'électron dans la région des plaques est : $F = q E = q \dfrac{V_p}{d}$(2)
 
@@ -465,6 +465,49 @@ Nous trouvons :
 
 \newpage
 
+## Représentation oscilloscopique
+
+### Théorie
+
+L'oscilloscope à rayons cathodiques nous permet d'observer l'évolution d'un signal électrique au fil du temps en le convertissant en un mouvement lumineux sur un écran fluorescent. Le signal d'entrée est premièrement amplifié puis transmis à un système de déviation qui agit sur le faisceau d'électrons émi par le canon électronique. Quand ce faisceau arrive à l'écran, il génère un point lumineux dont la position dépend principalement des tension de déviation appliquées.
+
+Il y a deux type de déviations :
+
+1. **Déviation horizontale** : Les 2 plaques reçoivent une tension en dents de scie, qui augmente de manière linéaire avec le temps. Cela crée un champ électrique constant qui permet au faisceau de se déplacer de gauche à droite. Quand la tension diminue d'un coup, le faisceau revient très rapidement à gauche. Ce mouvement représente le déroulement du temps.
+2. **Déviation verticale** : C'est une bobine qui est parcourue par le signal à analyser qui génère un champ magnétique variable, qui fait monter ou descendre le faisceau suivant la polarité du signal. Ce déplacement vertical correspond normalement à la valeur instantanée de la tension mesurée.
+
+Si on combine les 2 déviations, cela nous permet de visualiser un signal en fonction du temps. Si les 2 déviations sont correctement synchronisées, l'image est stable. Dans le cas contraire, le signal peut donner l'impression se déplacer de manière horizontale sur l'écran.
+
+### Résultat
+
+Nous avons pris plusieurs photos à plusieurs fréquences, les voici :
+
+Pour cette première mesure, nous avons pris une tension de 100 Hz $\pm$ 2 Hz.
+
+![Signal sinusoïdal : 100 Hz ](images/1e%20sinus%20.jpeg)
+
+Pour cette deuxième mesure, nous avons pris une tension de 1 kHz $\pm$ 2 Hz.
+
+![Signal sinusoïdal : 1 kHz](images/2e%20sinus.jpeg)
+
+### Analyse
+
+Lorsque la fréquencde de la tension en dents de scie et celle du générateur de fonctions sont synchronisée, l'scoilloscope affiche un signal stable. Ce signal résulte de l'action combinée de 2 tensions sur le faisceau d'électrons :
+
+1. La tension en dents de scie crée un champ électrique entre les 2 plaques de déviations qui sont horizontales, ce qui déplace le faisceau de gauche à droite. Quand la tension chute, le champ s'inverse et le faisceau revient rapidement à gauche et ne bouge presque plus du tout. Ce mouvement représente le déroulement du temps.
+2. En même temps, la tension sinusoïdale appliquée à une bobine génère un champ magnétique variable qui dévie le faisceau verticalement, en suivant la tension instantanée du signal.
+
+La trajectoire du faisceau sur l'écran reflète donc bel et bien la variation du signal sinusoïdal pendant le temps.
+
+Losque la fréquence du signal augmente progressivement (100 Hz, 250 Hz, 500 Hz, 750 Hz) le nombre de périodes visibles sur l'écran augmente aussi (1, 3, 5, 7 ou même 8).
+
+Ce que nous remarquons aussi, c'est que à 100 Hz et 500 Hz, l'image est **stable** car les fréquences sont bien synchronisées.
+Alors que à 250 Hz ou 750 Hz, l'image est instable et donne l'impression de se déplcaer horizontalement. Cette instabilité provient du manque de synchronisation entre le balayage horizontal et le signal d'entrée, surtout quand le rapport entre les 2 fréquences n'est pas un nombre entier.
+
+### Conclusion
+
+\newpage
+
 ## 3. Formes de lissajous
 
 ### 3.1 Introduction
@@ -507,7 +550,6 @@ Voici quelques exemples de variation d’amplitude avec une phase et fréquence 
 \end{minipage}
 \raggedright
 
-
 #### 3.3.2 Variations du déphasage
 
 Voici quelques exemples de variation de déphasage avec des amplitudes et fréquences identiques :  
@@ -532,7 +574,6 @@ Voici quelques exemples de variation de déphasage avec des amplitudes et fréqu
   \captionof{figure}{Déphasage de $\dfrac{\pi}{3}$ en $x$ et $\dfrac{\pi}{2}$ en $y$}
 \end{minipage}
 \raggedright
-
 
 #### 3.3.3 Variations du rapport des fréquences
 
@@ -606,7 +647,7 @@ Avec le rapport de fréquence $\dfrac{200Hz}{100Hz} = \dfrac{2}{3}$, on obtient 
 
 Ces images confirment bien le lien entre les figures de Lissajous et la déviation des électrons par des champs électriques alternatifs ainsi que le rapport entre les fréquences des tensions appliquées et la forme obtenue.
 
-## 3.5 Conclusion
+### 3.5 Conclusion
 
 Les figures de Lissajous offrent une représentation visuelle fascinante des interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, on peut générer une multitude de formes géométriques complexes. Ces figures ne sont pas seulement esthétiques, elles ont également des applications pratiques en physique et en ingénierie, notamment dans l'analyse des signaux électriques à l'aide d'oscilloscopes et de canons à électrons. Comprendre les principes sous-jacents aux figures de Lissajous permet d'approfondir notre connaissance des phénomènes vibratoires et des interactions dynamiques dans divers systèmes physiques.
 
