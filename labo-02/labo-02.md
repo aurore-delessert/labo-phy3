@@ -399,12 +399,26 @@ Ce que nous pouvons ajouter comme remarque visuelle est que dans chaque cas, les
 Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
 Voici les valeurs que nous avons obtenues pendant cette mesure :
 
-![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20droite.png){width=300px}
-![Mesure sens 1: bobine à gauche](images/1e%20sens_Bobine%20en%20haut.png){width=300px}
+\centering
 
-\newpage
-
-![Mesure sens 1: bobine à droite](images/1e%20sens_Bobine%20à%20gauche.png){width=300px}
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/1e_sens_Bobine_a_droite.png}
+  \captionof{figure}{Mesure sens 1: bobine à droite}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/1e_sens_Bobine_en_haut.png}
+  \captionof{figure}{Mesure sens 1: bobine en haut}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/1e_sens_Bobine_a_gauche.png}
+  \captionof{figure}{Mesure sens 1: bobine à gauche}
+\end{minipage}
+\raggedright
 
 Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
 
@@ -429,7 +443,7 @@ Voici les valeurs que nous avons obtenues pendant cette mesure :
 
 \begin{minipage}{0.3\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{images/2e_sens_bobine_a_droite.pnj}
+  \includegraphics[width=\linewidth]{images/2e_sens_Bobine_a_droite.png}
   \captionof{figure}{Mesure sens 2: bobine à droite}
 \end{minipage}
 \hfill
