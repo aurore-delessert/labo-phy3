@@ -45,7 +45,7 @@ Physique — HEIG-VD\\[1.5cm]
 
 \newpage
 
-## Introduction
+## 1. Introduction
 
 ![canon à électrons](images/intro-image.png)
 
@@ -62,7 +62,7 @@ Le faisceau est généré et focalisé sous vide dans un tube cathodique (dit au
 - Des champs magnétiques, orientés perpendiculairement par rapport au faisceau d’électrons, peuvent également dévier le faisceau. Pour générer les champs magnétiques des bobines électriques sont utilisées et peuvent être placées sous différents angles à l’extérieur du tube à vide, sur une armature circulaire et concentrique autour de l’axe du tube cathodique, afin d’étudier la déviation du faisceau de manière contrôlée en fonction de l’alimentation des bobines et de la vitesse des électrons.
 Lorsque l’on choisit l’emplacement d’une bobine telle que la déviation du faisceau d’électrons par le champ magnétique résulte le long l’axe verticale, on peut alimenter la bobine avec un signal électrique que l’on souhaite représenter en fonction du temps, simultanément à un balayage horizontal du faisceau, et ainsi rendre visible le signal électrique sur l’écran fluorescent comme sur un oscilloscope.
 
-## Matériel utilisé & Caractéristiques techniques
+## 2. Matériel utilisé & Caractéristiques techniques
 
 Tout au long de notre laboratoire, nous allons utiliser le matériel suivant :
 
@@ -86,7 +86,7 @@ Pour parler un peu plus en détails des caractéristiques techniques à prendre 
 
 Pour le module de commande, le voici :
 
-![module de commande](images/Module-commande.png)
+![module de commande](images/Module-commande.png){width=300px}
 
 Avec:
 \begin{itemize}
@@ -99,9 +99,13 @@ Avec:
 \item $U_-$ : Electrode de déviation gauche
 \end{itemize}
 
+Pour le branchement, voici le schéma :
+
+![branchement](images/Branchement.png){width=250px}
+
 \newpage
 
-## Prise en main & Calibration du système
+## 3. Prise en main & Calibration du système
 
 Afin de pouvoir réaliser ce laboratoire avec une meilleur visibilité des mesures, nous avons :
 \begin{itemize}
@@ -117,9 +121,9 @@ En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure 
 
 \newpage
   
-## 1 Manipulation 1 - Déviation électrique du faisceau électronique
+## 4. Manipulation 1 - Déviation électrique du faisceau électronique
 
-### 1.1 Rappels théoriques
+### 4.1 Rappels théoriques
 
 #### La génération des électrons
 
@@ -133,19 +137,19 @@ Le tube est équipé de 2 plaques de déviation électrostatiques. Cette paire d
 
 Pour calculer la déviation, nous allons partir de l'hypothèse que les électrons ne sont pas *relativistes*, c'est-à-dire que leur vitesse est suffisamment faible pour que les effets de relativité soient négligeable. Nous allons donc utiliser la mécanique classique. Nous démontrerons plus bas que comme la vitesse des électrons est très loins de la vitesse de la lumière, les effets relativistes (comme l'augmentation de la masse effective) sont négligeables.
 
-#### Notations
+### 4.2 Notations
 
 ![Schéma](images/schema-canon.png){width=400px}
 
 $\begin{cases} V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ d = \text{distance entre les plaques} [m] \\ l = \text{longueur des plaques} [m] \\ L = \text{distance entre la sortie des plaques et l'écran} [m] \end{cases}$
 
-#### Vitesse des électrons  
+### 4.3 Vitesse des électrons  
   
 On sait que : $E_c = \dfrac{1}{2} m_e v^2 = e V_a$.
 
 Alors on peut facilement trouver la vitesse de l'électron qui donne : $v_e = \sqrt{\dfrac{2 e V_a}{m_e}}$ (1)
 
-#### Déviation horizontale du faisceau
+### 4.4 Déviation horizontale du faisceau
 
 Avec les notations du schéma, on peut calculer la déviation horizontale $D$ du faisceau sur l'écran.
 
@@ -162,13 +166,13 @@ En remplaçant $v_e$ par son expression (1), on obtient finalement :
 
 $$D = \dfrac{q V_p l L}{m_e d \left( \dfrac{2 q V_a}{m_e} \right)} = \dfrac{V_p l L}{2 d V_a}\text{ }(7)$$
 
-#### Incertitudes sur la déviation
+### 4.5 Incertitudes sur la déviation
 
 La déviation $D$ dépend linéairement de $V_p$, $l$, $L$ et inversement de $d$ et $V_a$. En utilisant la formule de propagation des incertitudes pour une fonction de plusieurs variables, on trouve que l'incertitude relative sur $D$ est donnée par :
 
 $$\dfrac{\Delta D}{D} = \dfrac{\Delta V_p}{V_p} + \dfrac{\Delta l}{l} + \dfrac{\Delta L}{L} + \dfrac{\Delta d}{d} + \dfrac{\Delta V_a}{V_a}\text{ }(8)$$
 
-#### Application numérique
+### 4.6 Application numérique
 
 Avec les valeurs suivantes :
 \begin{itemize}
@@ -188,17 +192,19 @@ $$\dfrac{\Delta D}{D} = \dfrac{1}{100} + \dfrac{0.001}{0.02} + \dfrac{0.001}{0.1
 $$\Delta D = 0.141 \cdot 50.85 mm = 7.17 mm$$
 Donc, la déviation du faisceau est $D = 50.85 \pm 7.17 mm$.
 
-#### Analyses des résultats
+### 4.7 Analyses des résultats
 
 Lorsque nous appliquons une tension de 100V aux plaques de déviation, nous observons une déviation du faisceau d'environ $55 mm$ sur l'écran, ce qui est en accord avec notre calcul théorique de $50.85 \pm 7.17 mm$. Cette concordance entre la théorie et l'expérience confirme la validité de notre modèle pour la déviation électrostatique des électrons dans le canon à électrons. Pour expliquer les petites différences entre la valeur théorique et expérimentale, nous pouvons considérer des facteurs tels que les imprécisions dans les mesures des dimensions du système, les variations de la tension appliquée, des effets non idéaux dans le tube cathodique et aussi que l'écran ou on a mesuré et incurvé.
 
 \newpage
 
-## 2 Manipulation 2 - Déviation magnétique du faisceau électronique
+## 5. Manipulation 2 - Déviation magnétique du faisceau électronique
 
-### 2.1 Introduction
+### 5.1 Introduction
 
-### Rappel Théorique "Déviation des électrons"
+Dans cette manipulation, nous allons étudier la déviation d'un faisceau d'électrons par un champ magnétique généré par une bobine. Nous allons analyser comment la trajectoire des électrons est influencée par le champ magnétique et vérifier les relations théoriques entre le rayon de courbure de la trajectoire, la vitesse des électrons et l'intensité du champ magnétique.
+
+### 5.2 Rappel Théorique "Déviation des électrons"
 
 La déviation magnétique d'un faisceau d'électrons permet d'étudier l'effet d'un champ magnétique sur des charges qui se déplacent. Quand on faisceau d'électrons se déplace dans un champ magnétique $\vec{B}$ qui est perpendiculaire à sa vitesse $\vec{v}$, ce dernier subit une force de Lorentz qui est donnée par la formule :  
 $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) [N]$$  
@@ -218,7 +224,7 @@ Nous remarquons donc que la déviation observée sur l'écran dépend du champ m
 
 \newpage
 
-### Rappel Théorique "Solénoïdes"
+### 5.3 Rappel Théorique "Solénoïdes"
 
 ![solénoïde](images/solenoide.png)
 
@@ -270,7 +276,7 @@ Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est a
 
 \newpage
 
-### Calculs des incertitudes
+### 5.4 Calculs des incertitudes
 
 Nour allons réaliser les incertitudes pour la formule : $R = \frac{1}{B} \sqrt{\frac{2mV_a}{q}}$  
 Incertitude relative :
@@ -376,7 +382,7 @@ $$
 
 \newpage
 
-### Mesure et résultats
+### 5.5 Mesure et résultats
 
 Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
 
@@ -432,7 +438,7 @@ Pour mieux comprendre la trajectoire du faisceau, voici un croquis qui met en lu
 
 \newpage
 
-#### Analyse numérique des résultats
+### 5.6 Analyse numérique des résultats
 
 Pour commencer les analyses numériques, voici les différentes valeurs du champs que nous avons mesuré :
 Nous nous sommes rendues compte que les valeurs de tension sont totalement fausses car nous devions avoir la tension $V_a$ et nous avons la tension aux bornes de la bobine.
@@ -465,7 +471,7 @@ Nous trouvons :
 |   2    |  250    | 166,4 $\mu$ T    |  hors bobine     | 0,324 [m] = 32,4 [cm] |  9,7 [cm]  |
 |   3    |  250    | 247,0 $\mu$ T    |  centre bobine   | 0,218 [m] = 21,8 [cm] |  11,1 [cm] |
 
-#### Analyse des résultats
+### 5.7 Analyse des résultats
 
 Cette manipulation avait pour objectif d'étudier la déviation d'un faisceau d'électrons soumis à un champ magnétique, produit par une bobine (ou un solénoïde). Ce que nous avons pu constater :
 
@@ -479,7 +485,7 @@ Les résultats montrent :
 - Une variation du rayon de courbure qui suit la position de la bobine ainsi que l'intensité du champ.
 - Une cohérence des incertidudes, qui va confirmer la validité des mesures malgré les erreurs de mesures (notamment sur la tension anodique non mesurée directement et donc déterminée par la suite avec une grande imprécision).
 
-### Conclusion
+### 5.8 Conclusion manipulation 2
 
 L'étude de la déviation magnétique du faisceau a permis de mettre lumière l'effet du champ magnétique sur la trajectoire des électrons. Les résultats montrent une bonne cohérence avec les modèles théoriques, mais aussi l'importance des incertitudes dans l'interprétation.
 
@@ -503,9 +509,9 @@ En résumé, la manipulation illustre bien que :
 
 \newpage
 
-## Représentation oscilloscopique
+## 6. Manipulation 3 - Représentation oscilloscopique
 
-### Théorie
+### 6.1 Théorie
 
 L'oscilloscope à rayons cathodiques nous permet d'observer l'évolution d'un signal électrique au fil du temps en le convertissant en un mouvement lumineux sur un écran fluorescent. Le signal d'entrée est premièrement amplifié puis transmis à un système de déviation qui agit sur le faisceau d'électrons émi par le canon électronique. Quand ce faisceau arrive à l'écran, il génère un point lumineux dont la position dépend principalement des tension de déviation appliquées.
 
@@ -516,7 +522,7 @@ Il y a deux type de déviations :
 
 Si on combine les 2 déviations, cela nous permet de visualiser un signal en fonction du temps. Si les 2 déviations sont correctement synchronisées, l'image est stable. Dans le cas contraire, le signal peut donner l'impression se déplacer de manière horizontale sur l'écran.
 
-### Résultats
+### 6.2 Résultats
 
 Nous avons pris plusieurs photos à plusieurs fréquences, les voici :
 
@@ -530,7 +536,7 @@ Pour cette deuxième mesure, nous avons pris une tension de 1000 Hz $\pm$ 2 Hz.
 
 \newpage
 
-### Analyse
+### 6.3 Analyse
 
 Lorsque la fréquencde de la tension en dents de scie et celle du générateur de fonctions sont synchronisée, l'scoilloscope affiche un signal stable. Ce signal résulte de l'action combinée de 2 tensions sur le faisceau d'électrons :
 
@@ -544,7 +550,7 @@ Losque la fréquence du signal augmente progressivement (100 Hz, 250 Hz, 500 Hz,
 Ce que nous remarquons aussi, c'est que à 100 Hz et 500 Hz, l'image est **stable** car les fréquences sont bien synchronisées.
 Alors que à 250 Hz ou 750 Hz, l'image est instable et donne l'impression de se déplcaer horizontalement. Cette instabilité provient du manque de synchronisation entre le balayage horizontal et le signal d'entrée, surtout quand le rapport entre les 2 fréquences n'est pas un nombre entier.
 
-### Conclusion
+### 6.4 Conclusion manipulation 3
 
 L'ôscillation à rayons cathodques est un instrument indispensable pour pour visualiser l'écolution dans le temps d'un signal électrique. Il repose sur la déviation d'un faisceau d'électrons, qui est influencé par 2 tension distinctes :
 
@@ -563,14 +569,13 @@ Les images ci-dessus illustrent bien ce phénomène. Plus il y a de cycles affic
 
 \newpage
 
-## 3. Formes de lissajous
+## 7. Manipulation 4 - Formes de lissajous
 
-### 3.1 Introduction
+### 7.1 Introduction
 
 Les formes de Lissajous tiennent leurs noms du physicien Jules Antoine Lissajous. Il a étudié les mouvements vibratoires et a découvert que lorsque deux mouvements sinusoïdaux sont combinés, ils peuvent créer des figures géométriques complexes. Ces figures sont obtenues en traçant la trajectoire en X et Y d'un point en fonction du temps, où chaque axe représente un mouvement sinusoïdal différent.
 
-### 3.2 Équations des mouvements
-
+### 7.2 Équations des mouvements
 Les mouvements en X et Y sont décrits par les équations suivantes :
 
 \begin{itemize}
@@ -584,9 +589,9 @@ La figure la plus simple est obtenue lorsque les pulsations sont égales ($\omeg
 
 ![Figure de Lissajous diagonale](images/lissajous_diagonal.png)
 
-### 3.3 Exemples de figures de Lissajous
+### 7.3 Exemples de figures de Lissajous
 
-#### 3.3.1 Variations des amplitudes
+#### Variations des amplitudes
 
 Voici quelques exemples de variation d’amplitude avec une phase et fréquence identique :  
 
@@ -605,7 +610,7 @@ Voici quelques exemples de variation d’amplitude avec une phase et fréquence 
 \end{minipage}
 \raggedright
 
-#### 3.3.2 Variations du déphasage
+#### Variations du déphasage
 
 Voici quelques exemples de variation de déphasage avec des amplitudes et fréquences identiques :  
 
@@ -630,7 +635,7 @@ Voici quelques exemples de variation de déphasage avec des amplitudes et fréqu
 \end{minipage}
 \raggedright
 
-#### 3.3.3 Variations du rapport des fréquences
+#### Variations du rapport des fréquences
 
 Pour trouver le rapport des fréquences, on peut compter le nombre de pics dans chaque direction. Le rapport des fréquences est alors donné par le ratio du nombre de pics en X sur le nombre de pics en Y.
 
@@ -676,7 +681,7 @@ Voici quelques exemples de variation du rapport des fréquences avec des amplitu
 \end{minipage}
 \raggedright
 
-### 3.4 Parallèle avec le canon à électrons
+### 7.4 Parallèle avec le canon à électrons
 
 Le canon à électrons utilise des champs électriques et magnétiques pour dévier le faisceau d'électrons (voir partie 2). En appliquant des tensions alternatives avec des générateurs de signaux aux bobines de déviation horizontales et verticales, on peut créer des mouvements sinusoïdaux similaires à ceux décrits par les équations des figures de Lissajous. Ainsi, en ajustant les fréquences et les phases des tensions appliquées, on peut obtenir des figures de Lissajous sur l'écran du tube cathodique, permettant d'analyser les signaux électriques de manière visuelle.
 
@@ -702,8 +707,28 @@ Avec le rapport de fréquence $\dfrac{200Hz}{100Hz} = \dfrac{2}{3}$, on obtient 
 
 Ces images confirment bien le lien entre les figures de Lissajous et la déviation des électrons par des champs électriques alternatifs ainsi que le rapport entre les fréquences des tensions appliquées et la forme obtenue.
 
-### 3.5 Conclusion
+### 7.5 Conclusion manipulation 4
 
 Les figures de Lissajous offrent une représentation visuelle fascinante des interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, on peut générer une multitude de formes géométriques complexes. Ces figures ne sont pas seulement esthétiques, elles ont également des applications pratiques en physique et en ingénierie, notamment dans l'analyse des signaux électriques à l'aide d'oscilloscopes et de canons à électrons. Comprendre les principes sous-jacents aux figures de Lissajous permet d'approfondir notre connaissance des phénomènes vibratoires et des interactions dynamiques dans divers systèmes physiques.
 
 Plus précisement, cette partie de labo nous à permis de voir une application concrète de la déviation des électrons par des champs électriques alternatifs, et de comprendre comment les anciens oscilloscopes fonctionnaient pour analyser des signaux électriques.
+
+\newpage
+
+## 8. Résumé
+
+Ce laboratoire a exploré trois aspects fondamentaux de la physique des particules chargées et des signaux électriques.
+
+Dans la première partie, nous avons étudié la déviation des électrons dans un canon à électrons soumis à un champ électrique. Nous avons confirmé que la trajectoire des électrons est influencée par la tension appliquée aux plaques de déviation, conformément à la formule $D = \dfrac{V_p l L}{2 d V_a}$. Les résultats expérimentaux ont montré une relation linéaire entre la déviation verticale du faisceau et la tension appliquée, validant ainsi le modèle théorique.
+
+Dans la deuxième partie, nous avons étudié la déviation magnétique d'un faisceau d'électrons dans un canon à électrons soumis à un champ magnétique généré par une bobine. Nous avons confirmé que le rayon de courbure du faisceau dépendait du champ magnétique et de la tension d'accélération des électrons, conformément à la formule $R = \frac{1}{B} \sqrt{\frac{2mV_a}{q}}$. Les mesures ont montré une bonne cohérence avec les modèles théoriques, bien que des incertitudes significatives aient été notées, notamment en raison de l'approximation de la tension anodique.
+
+Dans la troisième partie, nous avons exploré le fonctionnement d'un oscilloscope à rayons cathodiques. Nous avons observé comment un signal sinusoïdal pouvait être visualisé en fonction du temps grâce à la déviation horizontale (balayage en dents de scie) et verticale (signal sinusoïdal). Les observations ont montré que la stabilité de l'image dépendait de la synchronisation entre les fréquences du balayage et du signal, illustrant ainsi les principes fondamentaux de l'oscilloscopie.
+
+Dans la quatrième partie, nous avons exploré les figures de Lissajous, qui illustrent les interactions entre deux mouvements sinusoïdaux. En variant les amplitudes, les déphasages et les rapports de fréquences, nous avons généré une variété de formes géométriques complexes. Ces figures ont été obtenues à l'aide du canon à électrons, démontrant ainsi l'application pratique des principes de déviation des électrons par des champs électriques alternatifs, ainsi que le fonctionnement des anciens oscilloscopes.
+
+En résumé, ce laboratoire a permis de renforcer notre compréhension des interactions entre les particules chargées et les champs électriques et magnétiques, ainsi que des techniques de visualisation des signaux électriques à l'aide d'oscilloscopes et de figures de Lissajous. Les résultats expérimentaux ont globalement validé les modèles théoriques, tout en mettant en évidence l'importance de la précision dans les mesures et les calculs d'incertitudes.
+
+Yverdon-les-Bains, le 12 décembre 2025
+
+Aurore Delessert et Magali Tornare
