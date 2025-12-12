@@ -470,7 +470,7 @@ Pour mieux comprendre la trajectoire du faisceau, voici un croquis qui met en lu
 
 ### 5.6 Analyse numérique des résultats
 
-Pour commencer les analyses numériques, voici les différentes valeurs du champs que nous avons mesuré :
+Pour commencer les analyses numériques, voici les différentes valeurs du champs que nous avons mesurées :
 Nous nous sommes rendues compte que les valeurs de tension sont totalement fausses car nous devions avoir la tension $V_a$ et nous avons la tension aux bornes de la bobine.
 
 | Mesure | Tension | Courant | Champ magnétique | Nombre de spires | Position capteur |
@@ -505,9 +505,9 @@ Nous trouvons :
 
 Cette manipulation avait pour objectif d'étudier la déviation d'un faisceau d'électrons soumis à un champ magnétique, produit par une bobine (ou un solénoïde). Ce que nous avons pu constater :
 
-- Le faisceau est bel et bien dévié sous l'effet de la force de Lorents qui est perpendiculaire à la vitesse des électrons.
+- Le faisceau est bel et bien dévié sous l'effet de la force de Lorentz qui est perpendiculaire à la vitesse des électrons.
 - Le rayon de courbure R dépend du champ magnétique B ainsi que de la tension d'accélération $V_a$.
-- Les mesures ont été faites en utilisant différents nombre de spires et différentes positions de la bobine (mesure au centre de la bobine ou à l'extérieur) et aussi pour 2 sens de courant.
+- Les mesures ont été faites en utilisant différents nombres de spires et différentes positions de la bobine (mesure au centre de la bobine ou à l'extérieur) et aussi pour 2 sens de courant.
 
 Les résultats montrent :
 
@@ -517,11 +517,11 @@ Les résultats montrent :
 
 ### 5.8 Conclusion manipulation 2
 
-L'étude de la déviation magnétique du faisceau a permis de mettre lumière l'effet du champ magnétique sur la trajectoire des électrons. Les résultats montrent une bonne cohérence avec les modèles théoriques, mais aussi l'importance des incertitudes dans l'interprétation.
+L'étude de la déviation magnétique du faisceau a permis de mettre en lumière l'effet du champ magnétique sur la trajectoire des électrons. Les résultats montrent une bonne cohérence avec les modèles théoriques, mais aussi l'importance des incertitudes dans l'interprétation.
 
 - Pour le **champ magnétique B**, les incertitudes absolues se situent entre **6,7 µT et 9,8 µT**, soit des incertitudes relatives de **3 à 6 %**. Ces valeurs restent faibles, ce qui montre la fiabilité des mesures du champ.
-- Pour le **rayon de courbure R**, les incertitudes absolues sont comprises entre **9,3 cm et 11,1 cm**, ce qui correspond à des incertitudes relatives plus élevées (**27 % à 51 %**). Cela montre que le calcul du rayon est beaucoup plus sensible aux variations de B. Il ne faut pas oublié non plus la mesure éronnée de V_a ce qui rend l’approximation de la tension anodique V_a plus grande.
-- Les constantes physiques (m, q) étant parfaitement connues, leur contribution est négligeable. L’incertitude dominante provient donc des mesures de **courant** et de la **géométrie de la bobine**, ainsi que de l’absence de mesure directe de V_a.
+- Pour le **rayon de courbure R**, les incertitudes absolues sont comprises entre **9,3 cm et 11,1 cm**, ce qui correspond à des incertitudes relatives plus élevées (**27 % à 51 %**). Cela montre que le calcul du rayon est beaucoup plus sensible aux variations de B. Il ne faut pas oublier non plus la mesure éronnée de $V_a$ qui rend l’approximation de la tension anodique $V_a$ plus grande.
+- Les constantes physiques (m, q) étant parfaitement connues, leur contribution est négligeable. L’incertitude dominante provient donc des mesures de **courant** et de la **géométrie de la bobine**, ainsi que de l’absence de mesure directe de $V_a$.
 
 #### Tableau récapitulatif
 
@@ -543,14 +543,14 @@ En résumé, la manipulation illustre bien que :
 
 ### 6.1 Théorie
 
-L'oscilloscope à rayons cathodiques nous permet d'observer l'évolution d'un signal électrique au fil du temps en le convertissant en un mouvement lumineux sur un écran fluorescent. Le signal d'entrée est premièrement amplifié puis transmis à un système de déviation qui agit sur le faisceau d'électrons émi par le canon électronique. Quand ce faisceau arrive à l'écran, il génère un point lumineux dont la position dépend principalement des tension de déviation appliquées.
+L'oscilloscope à rayons cathodiques nous permet d'observer l'évolution d'un signal électrique au fil du temps en le convertissant en un mouvement lumineux sur un écran fluorescent. Le signal d'entrée est premièrement amplifié puis transmis à un système de déviation qui agit sur le faisceau d'électrons émi par le canon électronique. Quand ce faisceau arrive à l'écran, il génère un point lumineux dont la position dépend principalement des tensions de déviation appliquées.
 
-Il y a deux type de déviations :
+Il y a deux types de déviations :
 
 1. **Déviation horizontale** : Les 2 plaques reçoivent une tension en dents de scie, qui augmente de manière linéaire avec le temps. Cela crée un champ électrique constant qui permet au faisceau de se déplacer de gauche à droite. Quand la tension diminue d'un coup, le faisceau revient très rapidement à gauche. Ce mouvement représente le déroulement du temps.
 2. **Déviation verticale** : C'est une bobine qui est parcourue par le signal à analyser qui génère un champ magnétique variable, qui fait monter ou descendre le faisceau suivant la polarité du signal. Ce déplacement vertical correspond normalement à la valeur instantanée de la tension mesurée.
 
-Si on combine les 2 déviations, cela nous permet de visualiser un signal en fonction du temps. Si les 2 déviations sont correctement synchronisées, l'image est stable. Dans le cas contraire, le signal peut donner l'impression se déplacer de manière horizontale sur l'écran.
+Si on combine les 2 déviations, cela nous permet de visualiser un signal en fonction du temps. Si les 2 déviations sont correctement synchronisées, l'image est stable. Dans le cas contraire, le signal peut donner l'impression de se déplacer de manière horizontale sur l'écran.
 
 ### 6.2 Résultats
 
@@ -568,7 +568,7 @@ Pour cette deuxième mesure, nous avons pris une tension de 1000 Hz $\pm$ 2 Hz.
 
 ### 6.3 Analyse
 
-Lorsque la fréquencde de la tension en dents de scie et celle du générateur de fonctions sont synchronisée, l'scoilloscope affiche un signal stable. Ce signal résulte de l'action combinée de 2 tensions sur le faisceau d'électrons :
+Lorsque la fréquencde de la tension en dents de scie et celle du générateur de fonctions sont synchronisée, l'oscilloscope affiche un signal stable. Ce signal résulte de l'action combinée de 2 tensions sur le faisceau d'électrons :
 
 1. La tension en dents de scie crée un champ électrique entre les 2 plaques de déviations qui sont horizontales, ce qui déplace le faisceau de gauche à droite. Quand la tension chute, le champ s'inverse et le faisceau revient rapidement à gauche et ne bouge presque plus du tout. Ce mouvement représente le déroulement du temps.
 2. En même temps, la tension sinusoïdale appliquée à une bobine génère un champ magnétique variable qui dévie le faisceau verticalement, en suivant la tension instantanée du signal.
@@ -591,9 +591,9 @@ Quand les 2 tensions sont combinées, cela permet de tracer le signal en foncito
 
 Les observations expérimentales montrent que :
 
-- Quand les fréquences du balayage horizontales et du signal sont synchronisée, alors l'image sur l'écran est stable.
-- Si les 2 fréquences ne sont pas synchronisées alors le signal devient instables et semble se déplacer de la gauche vers la droite sur l'écran.
-- Si la fréquence du signal augmente, cela entraine une augmentation du nombre de périodes visible sur l'écran. C'est ce phénomène qui permet de faire une estimation de la fréquence relative entre 2 signaux.
+- Quand les fréquences du balayage horizontales et du signal sont synchronisées, alors l'image sur l'écran est stable.
+- Si les 2 fréquences ne sont pas synchronisées alors le signal devient instable et semble se déplacer de la gauche vers la droite sur l'écran.
+- Si la fréquence du signal augmente, cela entraine une augmentation du nombre de périodes visibles sur l'écran. C'est ce phénomène qui permet de faire une estimation de la fréquence relative entre 2 signaux.
 
 Les images ci-dessus illustrent bien ce phénomène. Plus il y a de cycles affichés, plus la fréquence est élevée. Ainsi, l'analyse visuelle devient un outil rapide et efficace pour comparer les fréquences de signaux.
 
