@@ -31,7 +31,7 @@ header-includes:
 {\Large \textbf{Aurore Delessert, Magali Tornare}}\\
 Physique — HEIG-VD\\[1.5cm]
 
-\textbf{Date du laboratoire :} 17 octobre 2025\\
+\textbf{Date du laboratoire :} 12 décembre 2025\\
 \textbf{Professeure :} Dr Anne-Gabrielle Pawlowski\\
 \textbf{Salle de classe :} T06\\[3cm]
 
@@ -425,10 +425,26 @@ Pour le 2e sens, le courant va de la borne verte à la borne verte à la borne j
 Afin de mieux comprendre comment nous avons fait les mesures, nous avons inscrit les différentes positions de la bobine utilisée (a, b, c) ainsi que sur le calque, pour savoir quel tracé correspond à quelle position de la bobine.
 Voici les valeurs que nous avons obtenues pendant cette mesure :
 
-![Mesure sens 2: bobine à droite](images/2e%20sens_Bobine%20à%20droite.png){width=300px}
-![Mesure sens 2: bobine en haut](images/2e%20sens_Bobine%20en%20haut.png){width=300px}
+\centering
 
-![Mesure sens 2: bobine à gauche](images/2e%20sens_Bobine%20à%20gauche.png){width=300px}
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/2e_sens_Bobine_a_droite.png}
+  \captionof{figure}{Mesure sens 2: bobine à droite}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/2e_sens_Bobine_en_haut.png}
+  \captionof{figure}{Mesure sens 2: bobine en haut}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/2e_sens_Bobine_a_gauche.png}
+  \captionof{figure}{Mesure sens 2: bobine à gauche}
+\end{minipage}
+\raggedright
 
 Dans les tableaux, nous remarquons que les valeurs obtenues sont linéaires, ce qui est rassurant.
 
@@ -576,6 +592,7 @@ Les images ci-dessus illustrent bien ce phénomène. Plus il y a de cycles affic
 Les formes de Lissajous tiennent leurs noms du physicien Jules Antoine Lissajous. Il a étudié les mouvements vibratoires et a découvert que lorsque deux mouvements sinusoïdaux sont combinés, ils peuvent créer des figures géométriques complexes. Ces figures sont obtenues en traçant la trajectoire en X et Y d'un point en fonction du temps, où chaque axe représente un mouvement sinusoïdal différent.
 
 ### 7.2 Équations des mouvements
+
 Les mouvements en X et Y sont décrits par les équations suivantes :
 
 \begin{itemize}
