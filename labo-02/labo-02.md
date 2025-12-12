@@ -238,18 +238,18 @@ avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Per
 
 Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
 
-Pour illustrer ce cas, voici un schéma :
-
-![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png)
-
 La formule pour le champ magnétique devient :
 $$B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T](24)$$
 
 avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
 
-Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
+\newpage
 
-![Mesure hors bobine](images/Mesure%20hors%20bobine.png)
+Pour illustrer ce cas, voici un schéma :
+
+![Mesure au centre de la bobine](images/Mesure%20centre%20bobine.png){width=300px}
+
+Si nous sommes à l'extérieur de la bobine, nous allons utiliser la formule suivant pour calculer le champ :
 
 $$ B = \dfrac{{\mu}_{0} N I}{2L} \cdot (cos(\alpha_{1}) - cos(\alpha_{2})) [T](25) $$
 
@@ -264,9 +264,17 @@ $$
 
 avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s \cdot /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde}  \\ \alpha_{1}, \alpha_{2}  = \text{2 anlges (voir schéma ci-dessus) [rad] } \end{cases}$
 
+Voici le schéma :
+
+![Mesure hors bobine](images/Mesure%20hors%20bobine.png){width=300px}
+
+\newpage
+
 Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I. Sur l'image ci-dessous, la longueur de la bobine est noté d alors que nous l'avons appelée L dans les calculs.
 
 ![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
+
+\newpage
 
 ### Calculs des incertitudes
 
@@ -484,11 +492,13 @@ Nous avons pris plusieurs photos à plusieurs fréquences, les voici :
 
 Pour cette première mesure, nous avons pris une tension de 100 Hz $\pm$ 2 Hz.
 
-![Signal sinusoïdal : 100 Hz ](images/1e%20sinus%20.jpeg)
+![Signal sinusoïdal : 100 Hz ](images/1e%20sinus%20.jpeg){width=300px}
 
-Pour cette deuxième mesure, nous avons pris une tension de 1 kHz $\pm$ 2 Hz.
+Pour cette deuxième mesure, nous avons pris une tension de 1000 Hz $\pm$ 2 Hz.
 
-![Signal sinusoïdal : 1 kHz](images/2e%20sinus.jpeg)
+![Signal sinusoïdal : 1 kHz](images/2e%20sinus.jpeg){width=300px}
+
+\newpage
 
 ### Analyse
 
@@ -505,6 +515,21 @@ Ce que nous remarquons aussi, c'est que à 100 Hz et 500 Hz, l'image est **stabl
 Alors que à 250 Hz ou 750 Hz, l'image est instable et donne l'impression de se déplcaer horizontalement. Cette instabilité provient du manque de synchronisation entre le balayage horizontal et le signal d'entrée, surtout quand le rapport entre les 2 fréquences n'est pas un nombre entier.
 
 ### Conclusion
+
+L'ôscillation à rayons cathodques est un instrument indispensable pour pour visualiser l'écolution dans le temps d'un signal électrique. Il repose sur la déviation d'un faisceau d'électrons, qui est influencé par 2 tension distinctes :
+
+1. Tension en dents de scie - Assure le balayage horizontal qui représente le déroulement du temps.
+2. Tension du signal à mesurer (Souvent un sinus) - Provoque une déviation verticale qui traduit la valeur instantanée de la tension.
+
+Quand les 2 tensions sont combinées, cela permet de tracer le signal en fonciton du temps sur l'écran fluorescent.
+
+Les observations expérimentales montrent que :
+
+- Quand les fréquences du balayage horizontales et du signal sont synchronisée, alors l'image sur l'écran est stable.
+- Si les 2 fréquences ne sont pas synchronisées alors le signal devient instables et semble se déplacer de la gauche vers la droite sur l'écran.
+- Si la fréquence du signal augmente, cela entraine une augmentation du nombre de périodes visible sur l'écran. C'est ce phénomène qui permet de faire une estimation de la fréquence relative entre 2 signaux.
+
+Les images ci-dessus illustrent bien ce phénomène. Plus il y a de cycles affichés, plus la fréquence est élevée. Ainsi, l'analyse visuelle devient un outil rapide et efficace pour comparer les fréquences de signaux.
 
 \newpage
 
