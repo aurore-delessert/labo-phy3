@@ -107,14 +107,14 @@ Pour le branchement, voici le schéma :
 
 ## 3. Prise en main & Calibration du système
 
-Afin de pouvoir réaliser ce laboratoire avec une meilleur visibilité des mesures, nous avons :
+Afin de pouvoir réaliser ce laboratoire avec une meilleure visibilité des mesures, nous avons :
 \begin{itemize}
 \item Fixer une tension anodique à 250V
-\item Comme la tension de chauffage n'impacte pas la manipulation actuelle, nous l'avons mise au maximum, soit 8V.
+\item Comme la tension de chauffage n'impacte normalement pas les manipulations, nous l'avons mise au maximum, soit 8V.
 \item Pour pouvoir trouver la meilleure position du point sur l'oscilloscope didactique (c'est-à-dire au maximum au centre), nous avons orienté / tourné les 2 petits aimants qui se situaient sous l'écran comme montré sur la photo ci-dessous.
 \item Dans le but de pouvoir mieux comprendre comment régler le système et de réaliser des mesures précises et plus simple à analyser, nous avons calibré notre oscilloscope en déterminant la tension de Wehnelt.
 
-En testant différentes tension de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de -18 $\pm$ 0,2V.
+En testant différentes tensions de Wehnelt, nous avons trouvé que la meilleure tension pour pouvoir bien visualiser le point est de -18 $\pm$ 0,2V.
 \end{itemize}
 
 ![Aimants](images/Aiment%20sur%20oscilloscope.png){width=300px}
@@ -212,7 +212,7 @@ dans laquelle q est la charge d'un électron. Cette fameuse force, qui est perpe
 $$\frac{mv^2}{R} = qvB \quad \Rightarrow \quad R = \frac{mv}{qB} (20)$$  
 avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ R = \text{rayon} [m] \\ q = \text{charge de la particule} [C] \\ B = \text{champ électrique} [V/m]\end{cases}$
 
-En utilisant la formule de l'énergie, on peut relier la vitesse de l'électron à la tension anodique V_a par :  
+En utilisant la formule de l'énergie, on peut relier la vitesse de l'électron à la tension anodique $V_a$ par :  
 $$ \frac{1}{2}mv^{2} = q V_a \quad \Rightarrow \quad v = \sqrt{\frac{2qV_a}{m}} (21)$$
 avec : $\begin{cases} m = \text{masse de la particule} [kg] \\ v = \text{vitesse} [m/s] \\ q = \text{charge de la particule} [C] \\ V_a = \text{tension anodique} [V]\end{cases}$
 
@@ -228,20 +228,20 @@ Nous remarquons donc que la déviation observée sur l'écran dépend du champ m
 
 ![solénoïde](images/solenoide.png)
 
-UN solénoïdes est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand on courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
+Un solénoïde est en réalité une bobine de fil conducteur entroulé de manière hélicoïdale. Quand un courant électrique le parcourt, il génère un champ magnétique qui sera principalement axial à l'intérieur des spires.
 
 #### Champ magnétique dans un solénoïde  
 
-Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinire, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
+Le champ magnétique qui est généré par le passage d'un courant I dans une bobine ou un solénoïde dépend de la géométrie de ce dernier. S'il a une longueur infinie, le champ est considéré comme "uniforme" à l'interieur et à peu près nul à l'extérieur. Il est exprimé avec la formule suivante :
 $$B = \dfrac{{\mu}_{0} N I}{L} [T](23)$$
 avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m] \end{cases}$
 
-Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïdes, plus précisement l'endroit où il n'est plus uniforme).
+Si la solénoïde est de longueur finie, il faudra prendre en compte les effets de bords (les variations du champ près des extrémités du solénoïde, plus précisement l'endroit où il n'est plus uniforme).
 
 La formule pour le champ magnétique devient :
 $$B = \dfrac{{\mu}_{0} N I}{\sqrt{4R^{2} + L^{2}}} [T](24)$$
 
-avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} \\ R = \text{Rayaon du solénoïde} [m] \end{cases}$
+avec : $\begin{cases} N = \text{Nombre total de spires} [-] \\ \mu_0 = \text{Perméabilité du vide} [V\cdot s /m \cdot A] \\ I = \text{Intensité du courant} [A] \\ L = \text{Longueur du solénoïde} [m]\\ R = \text{Rayon du solénoïde} [m] \end{cases}$
 
 \newpage
 
@@ -270,7 +270,7 @@ Voici le schéma :
 
 \newpage
 
-Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer regardant l'image si-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I. Sur l'image ci-dessous, la longueur de la bobine est noté d alors que nous l'avons appelée L dans les calculs.
+Information sur le champ maximal : Nous savons qu'il est maximal lorsqu'il est au centre des spires. Nous pouvons le confirmer en regardant l'image ci-dessous dans laquelle nous voyons un champ magnétique B généré par un courant I. Sur l'image ci-dessous, la longueur de la bobine est noté d alors que nous l'avons appelée L dans les calculs.
 
 ![Champ électrique solénoïde](images/Champ%20magnétique.jpg){width=300px}
 
@@ -384,15 +384,15 @@ $$
 
 ### 5.5 Mesure et résultats
 
-Pour commencer, nous avons décider de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
+Pour commencer, nous avons décidé de vérifier la polarisation du champ d'une bobine suivant la polarisation du courant avec une boussole. Nous en avons déduit que le pôle Nord est attiré par le $V_{CC}$ et donc que le pôle Sud est attiré par le GDN.Le champ $\vec{B}$ se déplace donc du $V_{CC}$ au GND.
 
-Concernant les résultats suivant, les incertitudes des mesures de u et i sont repectivement de $\pm$ 0,005 [V] et $\pm$ 0,003 [A]. Ces dernières ont été déterminées en analysant quel digit du multimètre n'était pas stable et en regardant de combien ce dernier variait.
+Concernant les résultats suivants, les incertitudes des mesures de u et i sont repectivement de $\pm$ 0,005 [V] et $\pm$ 0,003 [A]. Ces dernières ont été déterminées en analysant quel digit du multimètre n'était pas stable et en regardant de combien ce dernier variait.
 Afin d'éviter de ralonger le rapport, nous avons réalisé les calculs avec les valeurs mesurées et juste reporté les valeurs trouvées.
 
 #### Mesure 1e sens
 
-Nous avons décidé de faire 2 calques différents. Le premier avec un premier sens du courant et le 2e dans l'autre sens. Cela nous a permis de mieux comprendre et mieux voir le changement de direction. Pour ce 1e sens, le courant va de la borne jaune pour 600 spires ou noire pour 300 spires à la borne verte.
-Ce que nous pouvons ajouté comme remarque visuelle est que dans chaque cas, les points partent dans une autre direction en s'éloignant du centre de l'écran.
+Nous avons décidé de faire 2 calques différents. Le premier avec un premier sens du courant et le 2e dans l'autre sens. Cela nous a permis de mieux comprendre et de mieux voir le changement de direction. Pour ce 1e sens, le courant va de la borne jaune pour 600 spires ou noire pour 300 spires à la borne verte.
+Ce que nous pouvons ajouter comme remarque visuelle est que dans chaque cas, les points partent dans une autre direction en s'éloignant du centre de l'écran.
 
 ![1e sens bobine](images/1e%20sens%20bobine.png)
 
@@ -429,7 +429,7 @@ Voici les valeurs que nous avons obtenues pendant cette mesure :
 
 \begin{minipage}{0.3\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{images/2e_sens_Bobine_a_droite.png}
+  \includegraphics[width=\linewidth]{images/2e_sens_bobine_a_droite.pnj}
   \captionof{figure}{Mesure sens 2: bobine à droite}
 \end{minipage}
 \hfill
