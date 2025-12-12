@@ -465,6 +465,42 @@ Nous trouvons :
 |   2    |  250    | 166,4 $\mu$ T    |  hors bobine     | 0,324 [m] = 32,4 [cm] |  9,7 [cm]  |
 |   3    |  250    | 247,0 $\mu$ T    |  centre bobine   | 0,218 [m] = 21,8 [cm] |  11,1 [cm] |
 
+#### Analyse des résultats
+
+Cette manipulation avait pour objectif d'étudier la déviation d'un faisceau d'électrons soumis à un champ magnétique, produit par une bobine (ou un solénoïde). Ce que nous avons pu constater :
+
+- Le faisceau est bel et bien dévié sous l'effet de la force de Lorents qui est perpendiculaire à la vitesse des électrons.
+- Le rayon de courbure R dépend du champ magnétique B ainsi que de la tension d'accélération $V_a$.
+- Les mesures ont été faites en utilisant différents nombre de spires et différentes positions de la bobine (mesure au centre de la bobine ou à l'extérieur) et aussi pour 2 sens de courant.
+
+Les résultats montrent :
+
+- Une relation linéaire entre le champ magnétique mesuré ainsi que le courant.
+- Une variation du rayon de courbure qui suit la position de la bobine ainsi que l'intensité du champ.
+- Une cohérence des incertidudes, qui va confirmer la validité des mesures malgré les erreurs de mesures (notamment sur la tension anodique non mesurée directement et donc déterminée par la suite avec une grande imprécision).
+
+### Conclusion
+
+L'étude de la déviation magnétique du faisceau a permis de mettre lumière l'effet du champ magnétique sur la trajectoire des électrons. Les résultats montrent une bonne cohérence avec les modèles théoriques, mais aussi l'importance des incertitudes dans l'interprétation.
+
+- Pour le **champ magnétique B**, les incertitudes absolues se situent entre **6,7 µT et 9,8 µT**, soit des incertitudes relatives de **3 à 6 %**. Ces valeurs restent faibles, ce qui montre la fiabilité des mesures du champ.
+- Pour le **rayon de courbure R**, les incertitudes absolues sont comprises entre **9,3 cm et 11,1 cm**, ce qui correspond à des incertitudes relatives plus élevées (**27 % à 51 %**). Cela montre que le calcul du rayon est beaucoup plus sensible aux variations de B. Il ne faut pas oublié non plus la mesure éronnée de V_a ce qui rend l’approximation de la tension anodique V_a plus grande.
+- Les constantes physiques (m, q) étant parfaitement connues, leur contribution est négligeable. L’incertitude dominante provient donc des mesures de **courant** et de la **géométrie de la bobine**, ainsi que de l’absence de mesure directe de V_a.
+
+#### Tableau récapitulatif
+
+| Mesure | B (µT) | ΔB (µT) | Relative ΔB/B | R (cm) | ΔR (cm) | Relative ΔR/R |
+|--------|--------|---------|---------------|--------|---------|---------------|
+| 1      | 153.9  | 9.81    | 6.4 %         | 34.3   | 9.3     | 27 %          |
+| 2      | 164.2  | 6.68    | 4.1 %         | 32.4   | 9.7     | 30 %          |
+| 3      | 245.6  | 7.88    | 3.2 %         | 21.8   | 11.1    | 51 %          |
+
+En résumé, la manipulation illustre bien que :
+
+- Le champ magnétique est mesuré avec une bonne précision quelques $\mu$T d'incertitude.
+- Le rayon de courbure présente des incertitudes plus importante ce qui impact grandement la précision de l'analyse quantitative.
+- La cohérence totale des résultats reste validé. Mais une mesure directe de la tension $V_a$ serait nécessaire pour réduire grandement cette incertitude.
+
 \newpage
 
 ## Représentation oscilloscopique
@@ -480,7 +516,7 @@ Il y a deux type de déviations :
 
 Si on combine les 2 déviations, cela nous permet de visualiser un signal en fonction du temps. Si les 2 déviations sont correctement synchronisées, l'image est stable. Dans le cas contraire, le signal peut donner l'impression se déplacer de manière horizontale sur l'écran.
 
-### Résultat
+### Résultats
 
 Nous avons pris plusieurs photos à plusieurs fréquences, les voici :
 
