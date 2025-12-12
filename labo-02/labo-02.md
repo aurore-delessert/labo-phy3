@@ -190,13 +190,7 @@ Donc, la déviation du faisceau est $D = 50.85 \pm 7.17 mm$.
 
 #### Analyses des résultats
 
-Lorsque nous appliquons une tension de 100V aux plaques de déviation, nous observons une déviation du faisceau d'environ $55 mm$ sur l'écran, ce qui est en accord avec notre calcul théorique de $50.85 \pm 7.17 mm$. Cette concordance entre la théorie et l'expérience confirme la validité de notre modèle pour la déviation électrostatique des électrons dans le canon à électrons.
-
-#### Equation de la déviation électrostatique  
-  
-Sachant que : $\begin{cases} d = \text{distance entre les plaques} [m] \\ L = \text{longueur de la bobine} [m] \\ D = \text{distance entre la sortie des plaques et l'écran} [m] \\ V_a = \text{tension d'accélération (anode-cathode)} [V] \\ V_p = \text{tension appliquée aux plaques de déviation} [V] \\ e = \text{charge d'un électron} [C] \\ m_e = \text{masse d'un électron} [kg] \end{cases}$
-
-On sait que : $y \approx \frac{V_p}{V_a} \cdot \frac{L \cdot D}{2d}$
+Lorsque nous appliquons une tension de 100V aux plaques de déviation, nous observons une déviation du faisceau d'environ $55 mm$ sur l'écran, ce qui est en accord avec notre calcul théorique de $50.85 \pm 7.17 mm$. Cette concordance entre la théorie et l'expérience confirme la validité de notre modèle pour la déviation électrostatique des électrons dans le canon à électrons. Pour expliquer les petites différences entre la valeur théorique et expérimentale, nous pouvons considérer des facteurs tels que les imprécisions dans les mesures des dimensions du système, les variations de la tension appliquée, des effets non idéaux dans le tube cathodique et aussi que l'écran ou on a mesuré et incurvé.
 
 \newpage
 
