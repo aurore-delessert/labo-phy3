@@ -48,18 +48,40 @@ Physique — HEIG-VD\\[1.5cm]
 
 \newpage
 
-## Experience 2: Propagation d'une onde dans un barreau
+## Experience 1: Propagation des ondes ultrasonores dans des milieux liquides
+
+### Introduction
+
+Les ondes acoustiques, qu’est-ce que c’est ?
+
+Une onde acoustique est une perturbation de pression qui se propage dans un milieu fluide/liquide.
+
+Parmi les perturbations sonores, nous retrouvons les ultrasons qui sont des ondes sonores dont la fréquence dépasse les 20kHz, ce qui rend leur perception impossible à entendre par l’oreille humaine. La génération des ondes ultrasonores repose sur un phénomène physique qui est la piézoélectricité. Certains cristaux, comme le quartz par exemple, présentent cette propriété et permettent de convertir une contrainte mécanique en signal électrique et vice-versa.
+
+![La constitution du quartz](images/Quartz.png)
+
+En effet, le quartz a une structure très spéciale car il n’a pas un centre symétrique, ce qui permet l’apparition d’une polarisation électrique lorsque ce dernier est soumis à une certaine contrainte mécanique. Cette polarisation génère une tension mesurable entre des électrodes.
+
+Comme dis précédemment, ce phénomène est réversible. En appliquant une tension alternative, le cristal entre en vibration à la fréquence du signal. Si cette fréquence est la même que la fréquence du signal, un effet de résonnance se produit et amplifie les vibrations. Ce mécanisme est à la base de la génération des ultrasons dans notre montage.
+
+### Objectifs de l'expérience
+
+L’expérience vise principalement à :  
+\begin{itemize}
+\item Observer la propagation d’une onde acoustique dans un liquide
+\item Mesurer la célérité (donc la vitesse de phase) d’une onde générée dans différents liquides.
+\item Mesurer la célérité en groupe (vitesse de groupe d’une onde générée dans un liquide et comparer cette vitesse avec celle de phase.
+\end{itemize}
+
+Comme il était demandé d’analyser la vitesse de groupe mais que nous l’avions déjà fait dans un précédent rapport, nous allons essayer de tirer des parallèles entres ces 2 expériences.
 
 ### Rappels théoriques
 
-On est ici dans le cas d'une onde longitudinale se propageant dans un barreau. La vitesse de propagation $v$ de l'onde est reliée au module d'Young $E$ et à la masse volumique $\rho$ du matériau par la relation suivante:
+La vitesse de propagation d’une onde acoustique dans un liquide, appelée célérité ou vitesse de phase, dépend de la fréquence de l’onde et de sa longueur d’onde. Pour une onde sinusoïdale, on peut calculer la vitesse avec la formule suivante :
 
-| | Barreau solide |
-|---|---|
-| Facteur de force de rappel | $E$ module d'Young |
-| Facteur d'inertie | $\rho$ masse volumique |
-| Vitesse de l'onde | $v = \sqrt{\frac{E}{\rho}} m/s$ |
-| Impédance $Z$ | $Z = \sqrt{E \rho} Pa \dot s/m$ |
-| Grandeur caractéristique | $\sigma_0 = Z\omega \psi_0$ contrainte |
-| Puissance moyenne $\bar{P}$ | $\dfrac{S\sigma_0^2}{2Z}$ |
-| Intensité moyenne $\bar{I}$ | $\dfrac{\sigma_0^2}{2Z}$ |
+$$v = f \cdot \lambda \quad \text{avec } v~[\text{m/s}],\ f~[\text{Hz}],\ \lambda~[\text{m}]$$
+
+La vitesse peut aussi dépendre des propriétés mécaniques du milieu dans lequel l’onde se propage. Dans ce cas, la formule devient :
+
+$$v = \sqrt{\frac{1}{\rho \cdot \kappa}} \quad \text{avec } \rho~[\text{kg/m}^3],\ \kappa~[\text{Pa}^{-1}]$$\\
+textit{où } $\rho$ est la masse volumique du milieu et $\kappa$ sa compressibilité.
