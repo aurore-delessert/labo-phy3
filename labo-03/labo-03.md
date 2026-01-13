@@ -45,18 +45,17 @@ Physique — HEIG-VD\\[1.5cm]
 
 \newpage
 
-## Experience 2: Propagation d'une onde dans un barreau
+## Experience 2 : Propagation d'une onde longitudinale dans un barreau
 
 ### Rappels théoriques
 
 On est ici dans le cas d'une onde longitudinale se propageant dans un barreau. La vitesse de propagation $v$ de l'onde est reliée au module d'Young $E$ et à la masse volumique $\rho$ du matériau par la relation suivante:
 
-| | Barreau solide |
-|---|---|
+| - | Barreau solide |
+| ------ | ------ |
 | Facteur de force de rappel | $E$ module d'Young |
 | Facteur d'inertie | $\rho$ masse volumique |
-| Vitesse de l'onde | $v = \sqrt{\frac{E}{\rho}}= \lambda f m/s$ |
-
+| Vitesse de l'onde | $v = \sqrt{\frac{E}{\rho}}= \lambda f = dfrac{\lambda}{T} m/s$ |
 
 ### But de l'expérience
 
@@ -65,6 +64,8 @@ Le but de cette expérience est de mesurer la vitesse de propagation d'une onde 
 ### Montage expérimental
 
 Nous allons utiliser le montage suivant:
+
+![Montage expérimental](images/schema_barreau.jpg)
 
 ### Résultats de l'expérience
 
@@ -163,6 +164,45 @@ $$v_{Fe,mes} = 4868 \pm 355 m/s$$
 
 On voit que la vitesse mesurée est en accord avec la vitesse théorique dans les limites de l'incertitude.
 
+### A quoi ça sert dans la vie de tous les jours?
+
+La connaissance de la vitesse de propagation des ondes dans différents matériaux est cruciale dans de nombreux domaines d'ingénierie et de physique appliquée. Par exemple, dans le domaine de la construction, comprendre comment les ondes sonores se propagent à travers les matériaux permet de concevoir des bâtiments avec une meilleure isolation acoustique. De plus, dans l'industrie automobile et aérospatiale, la connaissance des propriétés des matériaux aide à optimiser la résistance aux vibrations et aux chocs, améliorant ainsi la sécurité et le confort.
+
 ### Conclusion
 
 Dans cette expérience, nous avons mesuré la vitesse de propagation d'une onde longitudinale dans trois types de barreaux: aluminium, laiton et acier. Pour chaque matériau, nous avons comparé la vitesse mesurée avec la vitesse théorique calculée à partir du module d'Young et de la masse volumique. Nos résultats montrent que les vitesses mesurées sont en bon accord avec les vitesses théoriques, ce qui confirme la validité de la relation entre la vitesse de l'onde, le module d'Young et la masse volumique. Les incertitudes associées à nos mesures sont raisonnables et n'affectent pas significativement la conclusion de l'expérience.
+
+## Experience 3 : Cuve à ondes
+
+### But de l'expérience
+
+Une cuve à ondes est un dispositif utilisé pour étudier la propagation des ondes à la surface de l'eau. En générant des ondes à une extrémité de la cuve, on peut observer comment elles se propagent, se réfléchissent et interagissent avec des obstacles.
+
+Ici notre but va être de déterminer la vitesse de propagation des ondes à la surface de l'eau en fonction de la fréquence des ondes générées, aussi de montrer l'effet Doppler avec une source mobile et enfin d'observer des phénomènes d'interférences entre deux sources d'ondes.
+
+### Montage expérimental
+
+insérer schéma du montage
+
+### Effet Doppler
+
+#### Rappels théoriques
+
+L'effet Doppler est un phénomène physique qui se manifeste par une variation de la fréquence perçue d'une onde lorsqu'il y a un mouvement relatif entre la source de l'onde et l'observateur. Lorsque la source se rapproche de l'observateur, la fréquence perçue augmente (décalage vers le bleu), tandis que lorsque la source s'éloigne, la fréquence perçue diminue (décalage vers le rouge).
+
+La formule générale de l'effet Doppler pour une onde se propageant dans un milieu est donnée par:
+
+$$f' = f \frac{v + v_o}{v + v_s}$$
+
+où:
+
+- $f'$ est la fréquence perçue par l'observateur,
+- $f$ est la fréquence émise par la source,
+- $v$ est la vitesse de l'onde dans le milieu,
+- $v_o$ est la vitesse de l'observateur par rapport au milieu (positive si l'observateur se rapproche de la source),
+- $v_s$ est la vitesse de la source par rapport au milieu (positive si la source s'éloigne de l'observateur).
+
+#### But de l'expérience
+
+Le but est d'observer l'effet Doppler en bougeant une source d'ondes à une vitesse constante et en mesurant la fréquence des ondes. Nous allons pouvoir determiner la vitesse de la source à partir des fréquences mesurées lorsque la source se rapproche et s'éloigne de l'observateur.
+
