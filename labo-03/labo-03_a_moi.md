@@ -85,3 +85,44 @@ La vitesse peut aussi dépendre des propriétés mécaniques du milieu dans lequ
 
 $$v = \sqrt{\frac{1}{\rho \cdot \kappa}} \quad \text{avec } \rho~[\text{kg/m}^3],\ \kappa~[\text{Pa}^{-1}]$$\\
 textit{où } $\rho$ est la masse volumique du milieu et $\kappa$ sa compressibilité.
+
+Cette formule dépend donc directement les propriétés mécaniques du milieu, en particulier de :
+
+- La compressibilisé $\kappa$ du liquide qui est sa capacité à se comprimer.
+- Sa dentisé $\rho$
+
+Chaque liquide possède donc un combinaison différente de densité de compressibilité et de densité. Cela explique pourquoi la célérité varie en fonction du milieu dans lequel elle se propage.
+
+Dans la donnée, on nous donnait le tableau suivant :
+
+![Tableau avec valeurs tabulées](images/Tableau_Val_Vitesse_Liquide.png)
+\newpage
+
+### Montage expérimental
+
+![Croquis de la cuve avec QE et QR ](images/Montage_schéma_Cuve_QR_QE.png)
+
+Le montage principal repose sur une cuve à faces parallèle remplie de différents liquides (eau distillée, ethanole et glycérine), qui est fixée sur un banc d'optique. Un quartz émetteur (QE) est placé contre une des parois étroites (donc à une extrémité de la cuve) avec une pâte silicone entre elle et la parois afin que le contact avec la cuve se fasse le mieux possible. Un quartz recepteur (QR) est immergé verticalement dans le liquide et peut être déplacé horizontalement grâce à un cavalier d'optique.
+
+![Photo du montage](images/Image_Montage.png){ width=500px }  
+
+Sur l'image ci-dessus, on peut voir :
+
+- En jaune la cuve qui contiendra les différents liquides
+- En rouge, l'oscilloscope permettant de mesurer les 2 signaux générés par QE et QR
+- En vert, le générateur d'ultrasons pour QE
+- En bleu, l'appareil permetant de mesurer la fréquence générée par le générateur d'ultrasons
+
+Le principe de fonctionnement de ce montage repose sur la piézoélectricité du quartz. En effet, lorsqu'un champ électrique alternatif est appliqué au QE, ce dernier vibre mécaniquement à la fréquence du signal, ce qui génère une onde ultrasonore dans le liquide. Le QR sera donc soumis à cette onde et produira un signal électrique proportionnel à la pression accoustique reçue.
+
+### 1e manipulation
+
+Pour la première manipulation, nous avons pour chaque liquide mesuré le lambda de chaque signal, voici le tableau de résultats :
+
+| Liquide        | x₁ [mm] | x₂ [mm] | $\lambda$ = x₂ − x₁ [mm] | λ [m]     |
+|----------------|---------|---------|--------------------------|-----------|
+| Eau distillée  | 1,81    | 3,64    | 1,83                     | 0,00183   |
+| Glycérine      | 2,14    | 4,49    | 2,35                     | 0,00235   |
+| Éthanol        | 4,69    | 6,10    | 1,41                     | 0,00141   |
+
+Pour x1 ou x2, nous avons une incertitude de environ 0,02 mm d'incertitude.
