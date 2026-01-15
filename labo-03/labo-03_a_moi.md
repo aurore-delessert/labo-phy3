@@ -81,6 +81,8 @@ La vitesse de propagation d’une onde acoustique dans un liquide, appelée cél
 
 $$v = f \cdot \lambda \quad \text{avec } v~[\text{m/s}],\ f~[\text{Hz}],\ \lambda~[\text{m}]$$
 
+Avec lambda qui vaut $$\lambda = x_2 - x_1 \quad \text{avec} \quad x_1~[\text{mm}],\ x_2~[\text{mm}],\ \lambda~[\text{mm}]$$
+
 La vitesse peut aussi dépendre des propriétés mécaniques du milieu dans lequel l’onde se propage. Dans ce cas, la formule devient :
 
 $$v = \sqrt{\frac{1}{\rho \cdot \kappa}} \quad \text{avec } \rho~[\text{kg/m}^3],\ \kappa~[\text{Pa}^{-1}]$$\\
@@ -97,6 +99,54 @@ Dans la donnée, on nous donnait le tableau suivant :
 
 ![Tableau avec valeurs tabulées](images/Tableau_Val_Vitesse_Liquide.png)
 \newpage
+
+### Incertitudes
+
+En supposant que la fréquence (f) et la longueur d’onde ($\lambda$) sont indépendantes,
+l’incertitude sur la vitesse (v) est donnée par :
+$$
+\Delta v = \sqrt{
+\left(\frac{\partial v}{\partial f} \, \Delta f\right)^2
++
+\left(\frac{\partial v}{\partial \lambda} \, \Delta \lambda\right)^2
+}
+\quad \text{avec} \quad
+\Delta v~[\text{m·s}^{-1}]
+$$
+
+Les dérivées partielles donnent :
+
+À partir de (v = f $\lambda$), on obtient :
+$$
+\frac{\partial v}{\partial f} = \lambda
+\quad [\text{m}]
+\qquad \text{et} \qquad
+\frac{\partial v}{\partial \lambda} = f
+\quad [\text{Hz}]
+$$
+
+Ainsi, l’incertitude sur la célérité du son s’écrit :
+$$
+\Delta v = \sqrt{(\lambda \, \Delta f)^2 + (f \, \Delta \lambda)^2}
+\quad \text{avec} \quad
+\Delta f~[\text{Hz}],\
+\Delta \lambda~[\text{m}]
+$$
+
+Comme $x_1$ et $x_2$ sont indépendantes, l’incertitude sur la longueur d’onde est :
+$$
+\Delta \lambda = \sqrt{(\Delta x_1)^2 + (\Delta x_2)^2}
+\quad \text{avec} \quad
+\Delta x_1~[\text{mm}],\
+\Delta x_2~[\text{mm}]
+$$
+
+Après réflexion, nous avons pris la décision de mettre :
+$$
+\Delta x_1 = \pm 0,5 [mm]\space
+\Delta x_2 = \pm 0,5 [mm]\space
+\Delta f = \pm 5 [Hz]
+$$
 
 ### Montage expérimental
 
@@ -115,14 +165,57 @@ Sur l'image ci-dessus, on peut voir :
 
 Le principe de fonctionnement de ce montage repose sur la piézoélectricité du quartz. En effet, lorsqu'un champ électrique alternatif est appliqué au QE, ce dernier vibre mécaniquement à la fréquence du signal, ce qui génère une onde ultrasonore dans le liquide. Le QR sera donc soumis à cette onde et produira un signal électrique proportionnel à la pression accoustique reçue.
 
-### 1e manipulation
+### 1e manipulation : Mesure de la vitesse de phase dans différents liquides
 
-Pour la première manipulation, nous avons pour chaque liquide mesuré le lambda de chaque signal, voici le tableau de résultats :
+Pour la première manipulation, nous avons éxecuter 3 fois la même mesure, soit une fois pour chaque liquide. Cette mesure consiste à :
 
-| Liquide        | x₁ [mm] | x₂ [mm] | $\lambda$ = x₂ − x₁ [mm] | λ [m]     |
-|----------------|---------|---------|--------------------------|-----------|
-| Eau distillée  | 1,81    | 3,64    | 1,83                     | 0,00183   |
-| Glycérine      | 2,14    | 4,49    | 2,35                     | 0,00235   |
-| Éthanol        | 4,69    | 6,10    | 1,41                     | 0,00141   |
+1. Trouver une distance pour laquelle les 2 signaux de QE et QR sont supperposés comme sur l'image ci-dessous :
 
-Pour x1 ou x2, nous avons une incertitude de environ 0,02 mm d'incertitude.
+![Photo du montage](images/QE_et_QR.png){ width=300px }
+
+2. On translate une fois encore QR jusqu'à trouver à nouveau les 2 signaux superposé. Cela signifie que nous avons parcouru une longueur d'onde, ce qui nous permet de calculer le $\lambda$.
+
+Voici le tableau de des différentes distances et fréquences que nous avons mesurées :
+
+| Liquide        | x1 [mm] | x2 [mm] | fréquence [Hz] |
+|----------------|---------|---------|----------------|
+| Eau distillée  | 1,81    | 3,64    |     816'600    |
+| Glycérine      | 2,14    | 4,49    |     817'800    |
+| Éthanol        | 4,69    | 6,10    |     818'000    |
+
+### Calculs
+
+Avec le tableau des résultats représenté ci-dessus, nous pouvons maintenant calculer le $\lambda$ et les incertitudes.
+
+Voici le tableau avec les valeurs des incertitudes calculées :
+
+Voici le tableau des résultats :
+
+| Liquide        | $\lambda$ [mm] | $\lambda$ [m] | $\Delta \lambda$[mm] | v [m/s] | $\Delta v$ [m/s] |
+|----------------|----------------|---------------|----------------------|---------|------------------|
+| Eau distillée  |      1,83      |    0,00183    | 0,7 * $10^{-3}$      |  1'496  |   577            |
+| Glycérine      |      2,35      |    0,00235    | 0,7 * $10^{-3}$      |  1'922  |   578            |
+| Éthanol        |      1,45      |    0,00145    | 0,7 * $10^{-3}$      |  1'186  |   578            |
+
+## 2e Manipulation : Mesure de la vitesse de groupe dans l'eau distillé
+
+### Introduction
+
+Pour cette deuxième partie de l'expérience, nous devions mesurer la vitesse de groupe des ultrasons dans l'eau distilée à l'aide du montage émetteur-récepteur. Contrairement à la vitesse de phase, qui caractérise la propagation d'une onde sinusoïdale infinie, la vitesse de groupe correspond à la vitesse de propagation d'un paquet d'onde, c'est-à-dire d'un signal de durée finie.
+
+Dans notre cas, le quartz émetteur (QE) peut fontionner en régime impulsionnel. Il envoie donc des impulsion acoustiques brèves, qui se répète à environ 1kHz. Le quartz récepteur (QR) détecte les impulsions après la propagation dans le liquide.
+
+Normalement, comme nous sommes dans un milieu homogène et non dispersif, nous devrions retrouver à peu près la même vitesse que nous avons calculée pour la vitesse de phase.
+
+### Rappel théorique
+
+Pour la vitesse de groupe, on trouve la formule suivante :
+$$ v_g = \frac{\Delta x}{\Delta t}$$
+textit{où } $Delta x$ est le déplacement de QR et $\Delta t$ la différence de période.
+
+$$ u_{v_g} = \sqrt{ \left(\frac{\partial v_g}{\partial (\Delta x)} u_{\Delta x}\right)^2 + \left(\frac{\partial v_g}{\partial (\Delta t)} u_{\Delta t}\right)^2 } $$
+
+$$ \frac{\partial v_g}{\partial (\Delta x)} = \frac{1}{\Delta t} $$
+$$ \frac{\partial v_g}{\partial (\Delta t)} = -\frac{\Delta x}{(\Delta t)^2} $$
+
+$$ u_{v_g} = \sqrt{ \left(\frac{u_{\Delta x}}{\Delta t}\right)^2 + \left(\frac{\Delta x}{(\Delta t)^2} u_{\Delta t}\right)^2 } $$
