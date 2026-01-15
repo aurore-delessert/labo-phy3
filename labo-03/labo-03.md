@@ -353,6 +353,20 @@ Ce phénomène est interessant car il montre que les ondes ne se propagent pas u
 
 Comme ici sur l'image, On peut voir que les ondes passent à travers une ouverture et se propagent en formant des cercles, illustrant ainsi le phénomène de diffraction alors que les ondes de base étaient rectilignes.
 
+Ce phénomène peut être expliqué par le principe de Huygens-Fresnel, qui stipule que chaque point d'une onde peut être considéré comme une source secondaire d'ondes sphériques. Lorsque ces ondes secondaires rencontrent un obstacle ou une ouverture, elles interfèrent pour former de nouveaux motifs d'onde.
+
+#### Cas célèbres de diffraction
+
+Un cas assez connu de diffraction est celui des fentes de Young en optique, où la lumière passant à travers deux fentes étroites crée un motif d'interférence caractéristique sur un écran, démontrant la nature ondulatoire de la lumière.
+
+![Diffraction des fentes de Young](images/fente_young.png){#fig:QE width=80%}
+
+#### Dans la vie de tous les jours
+
+La diffraction des ondes est un phénomène omniprésent dans notre vie quotidienne. Par exemple, lorsque le son d'une source sonore passe à travers une porte entrouverte, il se propage dans la pièce voisine en contournant l'obstacle, permettant ainsi d'entendre la source même si elle n'est pas directement visible. De même, en optique, la diffraction de la lumière est exploitée dans des dispositifs tels que les réseaux de diffraction utilisés pour analyser les spectres lumineux. En radiofréquence, la diffraction des ondes radio permet aux signaux de contourner des obstacles tels que des bâtiments ou des collines, facilitant ainsi la communication dans des environnements urbains ou ruraux.
+
+![Schéma de la diffraction](images/diffraction_schema.png){#fig:QE width=80%}
+
 #### Conclusion
 
 Ici nous avons juste fait une courte observation qualitative de la diffraction des ondes à la surface de l'eau dans la cuve à ondes. En plaçant un obstacle partiel dans le chemin des ondes, nous avons pu observer comment les ondes se courbaient autour de l'obstacle, créant des motifs de diffraction caractéristiques. Cette observation illustre le principe fondamental de la diffraction, qui est essentiel pour comprendre le comportement des ondes dans divers contextes physiques.
