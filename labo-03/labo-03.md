@@ -14,6 +14,7 @@ header-includes:
   - \usepackage{amsmath}
   - \usepackage{capt-of}
   - \usepackage{booktabs}
+  - \usepackage{float}
 ---
 
 \includegraphics[width=0.25\textwidth]{images/heig-logo.png}
@@ -65,7 +66,7 @@ Le but de cette expérience est de mesurer la vitesse de propagation d'une onde 
 
 Nous allons utiliser le montage suivant:
 
-![Montage expérimental](images/schema_barreau.jpg)
+![Montage expérimental](images/schema_barreau.jpg){#fig:QE width=80%}
 
 ### Résultats de l'expérience
 
@@ -182,7 +183,7 @@ Ici notre but va être de déterminer la vitesse de propagation des ondes à la 
 
 ### Montage expérimental
 
-![Cuve à ondes](images/cuve_a_ondes.png)
+![Cuve à ondes](images/cuve_a_ondes.png){#fig:QE width=80%}
 
 - a : interrupteur du stroboscope
 - b : bouton (réglage fin de la fréquence du stroboscope)
@@ -258,7 +259,7 @@ Nous avons aussi vu le phénomène de cônes de Mach lorsque la source se dépla
 
 Voici une illustration de l'effet Doppler et du cône de Mach observé dans la cuve à ondes:
 
-![Effet Doppler et cône de Mach](images/doppler_mach.png)
+![Effet Doppler et cône de Mach](images/doppler_mach.png){#fig:QE width=80%}
 
 Ici on peut voir que les ondes sont plus rapprochées devant la source en mouvement (fréquence plus élevée) et plus espacées derrière la source (fréquence plus basse). 
 
@@ -268,7 +269,7 @@ $$\sin(\theta) = \frac{v}{v_s}$$
 
 En mesurant cet angle, nous pourrions estimer la vitesse de la source par rapport à la vitesse des ondes dans la cuve.
 
-![Cône de Mach](images/photo_mach.png)
+![Cône de Mach](images/photo_mach.png){#fig:QE width=80%}
 
 Ici l'angle $\theta$ peut être mesuré pour estimer la vitesse de la source.
 
@@ -300,7 +301,7 @@ L'expérience de l'effet Doppler dans la cuve à ondes nous a permis d'observer 
 
 Pour cette expérience, nous avons utilisé deux générateurs d'ondes circulaires placés à une distance fixe l'un de l'autre dans la cuve à ondes. En réglant les deux générateurs pour qu'ils émettent des ondes à la même fréquence et en phase, nous avons pu observer le phénomène d'interférences entre les ondes générées par les deux sources.
 
-![Interférences dans la cuve à ondes](images/interference.png)
+![Interférences dans la cuve à ondes](images/interference.png){#fig:QE width=80%}
 
 #### Rappels théoriques
 
@@ -312,7 +313,7 @@ $d_c = n \lambda$ pour les interférences constructives (maxima), où $n$ est un
 
 $d_d = (n + 0.5) \lambda$ pour les interférences destructives (minima), où $n$ est un entier (0, 1, 2, ...).
 
-![Schéma des interférences](images/interference_couleur.png)
+![Schéma des interférences](images/interference_couleur.png){#fig:QE width=80%}
 
 #### Observation expérimentale
 
@@ -320,9 +321,9 @@ En observant l'écran de la cuve à ondes, nous avons pu identifier des zones o�
 
 Voici une photo prise de l'écran montrant les motifs d'interférence:
 
-![Photo des interférences](images/photo_interference.png)
+![Photo des interférences](images/photo_interference.png){#fig:QE width=80%}
 
-Avec en noir les hyperboles d'interférences. 
+Avec en noir les hyperboles d'interférences.
 
 Avec $\lambda \approx \dfrac{0.008}{1.63} m \approx 0.0049 m$ et la distance entre les deux sources $d = 0.1 m$.
 
