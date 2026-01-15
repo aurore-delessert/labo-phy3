@@ -338,3 +338,21 @@ Les interférences entre ondes sont un phénomène courant dans de nombreux doma
 #### Conclusion
 
 L'expérience des interférences entre deux sources d'ondes dans la cuve à ondes nous a permis d'observer les motifs caractéristiques d'interférence résultant de la superposition des ondes émises par les deux générateurs. En réglant les sources pour qu'elles émettent des ondes à la même fréquence et en phase, nous avons pu identifier clairement les zones d'interférences constructives et destructives sur l'écran de la cuve. Ces observations confirment les principes fondamentaux des interférences ondulatoires et illustrent comment la superposition des ondes peut conduire à des variations significatives de l'amplitude résultante en fonction de la phase relative des ondes impliquées.
+
+### Diffraction des ondes
+
+La diffraction est un phénomène qui se produit lorsque des ondes rencontrent un obstacle ou une ouverture, provoquant une déviation de leur trajectoire. Dans cette expérience, nous avons observé la diffraction des ondes à la surface de l'eau en utilisant la cuve à ondes.
+
+#### Observation expérimentale
+
+En plaçant un obstacle partiel dans le chemin des ondes générées par le générateur d'ondes linéaire, nous avons pu observer comment les ondes se courbaient autour de l'obstacle, créant des motifs de diffraction sur l'écran de la cuve.
+
+![Diffraction des ondes](images/diffraction.png){#fig:QE width=80%}
+
+Ce phénomène est interessant car il montre que les ondes ne se propagent pas uniquement en ligne droite, mais peuvent également contourner des obstacles, ce qui est crucial dans de nombreux domaines, tels que l'acoustique, l'optique et les télécommunications.
+
+Comme ici sur l'image, On peut voir que les ondes passent à travers une ouverture et se propagent en formant des cercles, illustrant ainsi le phénomène de diffraction alors que les ondes de base étaient rectilignes.
+
+#### Conclusion
+
+Ici nous avons juste fait une courte observation qualitative de la diffraction des ondes à la surface de l'eau dans la cuve à ondes. En plaçant un obstacle partiel dans le chemin des ondes, nous avons pu observer comment les ondes se courbaient autour de l'obstacle, créant des motifs de diffraction caractéristiques. Cette observation illustre le principe fondamental de la diffraction, qui est essentiel pour comprendre le comportement des ondes dans divers contextes physiques.
