@@ -62,7 +62,7 @@ Parmi les perturbations sonores, nous retrouvons les ultrasons qui sont des onde
 
 En effet, le quartz a une structure très spéciale car il n’a pas un centre symétrique, ce qui permet l’apparition d’une polarisation électrique lorsque ce dernier est soumis à une certaine contrainte mécanique. Cette polarisation génère une tension mesurable entre des électrodes.
 
-Comme dis précédemment, ce phénomène est réversible. En appliquant une tension alternative, le cristal entre en vibration à la fréquence du signal. Si cette fréquence est la même que la fréquence du signal, un effet de résonnance se produit et amplifie les vibrations. Ce mécanisme est à la base de la génération des ultrasons dans notre montage.
+Comme dit précédemment, ce phénomène est réversible. En appliquant une tension alternative, le cristal entre en vibration à la fréquence du signal. Si cette fréquence est la même que la fréquence du signal, un effet de résonnance se produit et amplifie les vibrations. Ce mécanisme est à la base de la génération des ultrasons dans notre montage.
 
 ### Objectifs de l'expérience
 
@@ -72,8 +72,6 @@ L’expérience vise principalement à :
 \item Mesurer la célérité (donc la vitesse de phase) d’une onde générée dans différents liquides.
 \item Mesurer la célérité en groupe (vitesse de groupe d’une onde générée dans un liquide et comparer cette vitesse avec celle de phase.
 \end{itemize}
-
-Comme il était demandé d’analyser la vitesse de groupe mais que nous l’avions déjà fait dans un précédent rapport, nous allons essayer de tirer des parallèles entres ces 2 expériences.
 
 ### Rappels théoriques
 
@@ -88,12 +86,9 @@ La vitesse peut aussi dépendre des propriétés mécaniques du milieu dans lequ
 $$v = \sqrt{\frac{1}{\rho \cdot \kappa}} \quad \text{avec } \rho~[\text{kg/m}^3],\ \kappa~[\text{Pa}^{-1}]$$\
 où $\rho$ est la masse volumique du milieu et $\kappa$ sa compressibilité.
 
-Cette formule dépend donc directement les propriétés mécaniques du milieu, en particulier de :
+Cette formule dépend donc directement des propriétés mécaniques du milieu :
 
-- La compressibilisé $\kappa$ du liquide qui est sa capacité à se comprimer.
-- Sa dentisé $\rho$
-
-Chaque liquide possède donc un combinaison différente de densité de compressibilité et de densité. Cela explique pourquoi la célérité varie en fonction du milieu dans lequel elle se propage.
+Chaque liquide possède donc un combinaison différente de compressibilité et de densité. Cela explique pourquoi la célérité varie en fonction du milieu dans lequel elle se propage.
 
 Dans la donnée, on nous donnait le tableau suivant :
 
@@ -101,23 +96,23 @@ Dans la donnée, on nous donnait le tableau suivant :
 
 En théorie, la vitesse de groupe est définie par :
 
-$$ v_p = \frac{\omega}{k} $$
+$$ v_g = \frac{\omega}{k} $$
 Avec :
 
 $\omega$ est la **pulsation** de l’onde (en rad/s),
 $\kappa$ est le **nombre d’onde** (en rad/m).
 
-Cependant, dans notre car, nous ne pouvons pas mesurer directement $\omega$ ou $\kappa$. Alors on va mesurer la propagation d'un paquet d'onde (impulsion) entre deux positions. On transforme donc la formule comme suit :
+Cependant, dans notre cas, nous ne pouvons pas mesurer directement $\omega$ ou $\kappa$. Alors nous avons mesurer la propagation d'un paquet d'ondes (impulsions) entre deux positions. On transforme donc la formule comme suit :
 
 On sait que :
 $$ \omega = 2\pi f $$
 $$ \kappa = \frac{2\pi}{\lambda} $$
 
 On remplace donc dans la formule :
-$$ v_p = \frac{2\pi f}{\frac{2\pi}{\lambda}} $$
+$$ v_g = \frac{2\pi f}{\frac{2\pi}{\lambda}} $$
 
 Et en simplifiant, on trouve :
-$$ v_p = f \lambda $$
+$$ v_g = f \lambda $$
 
 $$ v_g = \frac{\Delta x}{\Delta t} = \frac{x}{t}$$
 où $x = x_2 - x_1$ est le déplacement de QR et $t = t_2 - t_1$ la différence de période.
@@ -144,7 +139,7 @@ $$
 
 Les dérivées partielles donnent :
 
-À partir de (v = f $\lambda$), on obtient :
+À partir de (v = f $\cdot \lambda$), on obtient :
 $$
 \frac{\partial v}{\partial f} = \lambda
 \quad [\text{m}]
@@ -202,7 +197,7 @@ $$ \Delta{v_g} = \sqrt{ \left(\frac{\Delta x}{\Delta t}\right)^2 + \left(\frac{\
 
 ### Montage expérimental
 
-Le montage principal repose sur une cuve à faces parallèle remplie de différents liquides (eau distillée, ethanole et glycérine), qui est fixée sur un banc d'optique. Un quartz émetteur (QE) est placé contre une des parois étroites (donc à une extrémité de la cuve) avec une pâte silicone entre elle et la parois afin que le contact avec la cuve se fasse le mieux possible. Un quartz recepteur (QR) est immergé verticalement dans le liquide et peut être déplacé horizontalement grâce à un cavalier d'optique.
+Le montage principal repose sur une cuve, à faces parallèles, remplie de différents liquides (eau distillée, ethanole et glycérine), qui est fixée sur un banc d'optique. Un quartz émetteur (QE) est placé contre une des parois étroites (donc à une extrémité de la cuve) avec une pâte silicone entre elle et la parois afin que le contact avec la cuve se fasse le mieux possible. Un quartz récepteur (QR) est immergé verticalement dans le liquide et peut être déplacé horizontalement grâce à un cavalier d'optique.
 
 ![Croquis de la cuve avec QE et QR ](images/Montage_schéma_Cuve_QR_QE.png)
 
@@ -219,15 +214,15 @@ Le principe de fonctionnement de ce montage repose sur la piézoélectricité du
 
 ### 1e manipulation : Mesure de la vitesse de phase dans différents liquides
 
-Pour la première manipulation, nous avons éxecuter 3 fois la même mesure, soit une fois pour chaque liquide. Cette mesure consiste à :
+Pour la première manipulation, nous avons éxecuté 3 fois la même mesure, soit une fois par liquide. Cette mesure consiste à :
 
 1. Trouver une distance pour laquelle les 2 signaux de QE et QR sont supperposés comme sur l'image ci-dessous :
 
-2. On translate une fois encore QR jusqu'à trouver à nouveau les 2 signaux superposé. Cela signifie que nous avons parcouru une longueur d'onde, ce qui nous permet de calculer le $\lambda$.
+2. On translate une fois encore QR jusqu'à trouver à nouveau les 2 signaux superposés. Cela signifie que nous avons parcouru une longueur d'onde, ce qui nous permet de calculer le $\lambda$.
 
 ![Superposition de QE et QR](images/QE_et_QR.png){ width=300px }
 
-Voici le tableau de des différentes distances et fréquences que nous avons mesurées :
+Voici le tableau des différentes distances et fréquences que nous avons mesurées :
 
 | Liquide        | x1 [mm] | x2 [mm] | fréquence [Hz] |
 |----------------|---------|---------|----------------|
@@ -237,19 +232,18 @@ Voici le tableau de des différentes distances et fréquences que nous avons mes
 
 ### Dans la vie de tous les jours
 
-Dans la vie de tous les jours, on retrouve propagation d'une onde avec la vitesse de phase dans pas mal de cas, comme par exemple :
+Dans la vie de tous les jours, on retrouve la propagation d'une onde avec la vitesse de phase dans pas mal de cas, comme par exemple :
 
 - Les échographies médicales :
 Dans les échographies (en mode continu), aussi appelée échographie Doppler, on envoie une onde presque continue dans le corps pour mesurer la vitesse de sang. La vitesse de phase est essentielle pour calculer le décalage Doppler, déterminer la vitesse du flux sanguin et calibrer l'appareil pour que les distances soient correctent.
 
 - Sonar et navigation sous-marine :
+  Les sonars utilisent uniquement des ondes continues pour : détecter des potentiels obstacles, mesurer la profondeur actuelle et cartographier les fonds marins. La vitesse de phase dans l'eau, qui est estimée à 1500 m/s, est un paramètre fondamental pour convertir le temps de propagation en distance.
 
-![Sonar marin](images/Image_bateau_sonar.png){ width=300px }
+  ![Sonar marin](images/Image_bateau_sonar.png){ width=300px }
 
-Les sonars utilisent uniquement des ondes continues pour : détecter des potentiels obstacles, mesurer la profondeur actuelle et cartographier les fonds marins. La vitesse de phase dans l'eau, qui est estimée à 1500 m/s, est un paramètre fondamental pour convertir le temps de propagation en distance.
-
-- Contrôle industriel : Epaisseur de matériaux
-Dans certaines industries, on envoie une onde ultrasonore continue dans un matériau pour mesurer : L'épaisseur d'une plaque, la présence potentielle de défauts internes et la qualité d'une soudure.
+- Contrôle industriel :
+Dans certaines industries, on envoie une onde ultrasonore continue dans un matériau pour mesurer : L'épaisseur d'une plaque, la présence potentielle de défauts internes ou la qualité d'une soudure.
 La vitesse de phase dans le matériau doit être connue afin que la plécision pour la mesure soit fiable.
 
 ### Calculs & Analyse des résultats
@@ -264,7 +258,7 @@ Voici le tableau des résultats :
 | Glycérine      |      2,35      |    0,00235    | 0,7 * $10^{-3}$      |        5        |  1'922  |   578            |
 | Éthanol        |      1,45      |    0,00145    | 0,7 * $10^{-3}$      |        5        |  1'186  |   578            |
 
-Pour l'analyse des résultats obtenus, nous pouvons voir que les incertitudes sont énormes. Cela est lié au fait que nous avions beaucoup de problème pour lire correctemen correctement les valeurs des positions car le système de mesure était peu stable et surtout difficile à lire.
+Pour l'analyse des résultats obtenus, nous pouvons voir que les incertitudes sur la vitesse sont énormes. Cela est lié au fait que nous avons beaucoup de problème pour lire correctement les valeurs des positions car le système de mesure était peu stable et surtout difficile à lire.
 
 Concernant les valeurs de la vitesse de propagation trouvée, nous remarquons que ces dernières sont très près des valeurs données par la consigne. Voici un tableau qui les compare :
 
@@ -277,8 +271,8 @@ Sachant que $v_i$ est la valeur numérique donnée dans la notice du laboratoire
 | Glycérine      |      1'914       |  1'922   |         -8          |     -0,42     |
 | Éthanol        |      1'194       |  1'186   |          8          |      0,67     |
 
-Comme pour chaque mesure, nous avons une erreur qui se trouve en dessous de $\pm$ 1%, nous sommes satisfaite de nos mesures.
-Bien sûr comme nous ne sommes pas sûre que la température du laboratoire au moment où nous avons fait nos expériences, nous ne pouvons pas être sûre que toutes les mesures sont correctes mais du moins, elles se rapprochent de la valeur voulue.
+Comme pour chaque mesure nous avons une erreur qui se trouve en dessous de $\pm$ 1%, nous sommes satisfaite de nos mesures.
+Bien sûr comme nous ne sommes pas sûre que la température du laboratoire au moment où nous avons fait nos expériences, nous ne pouvons pas être certaines que toutes les mesures sont correctes mais du moins, elles se rapprochent de la valeur voulue.
 
 ### 2e Manipulation : Mesure de la vitesse de groupe dans l'eau distillé
 
@@ -288,37 +282,35 @@ Pour cette deuxième partie de l'expérience, nous devions mesurer la vitesse de
 
 Dans notre cas, le quartz émetteur (QE) peut fontionner en régime impulsionnel. Il envoie donc des impulsions acoustiques brèves, qui se répètent à environ 1kHz. Le quartz récepteur (QR) détecte les impulsions après la propagation dans le liquide.
 
-Normalement, comme nous sommes dans un milieu homogène et non dispersif, nous devrions retrouver à peu près la même vitesse que nous avons calculée pour la vitesse de phase.
+Normalement, comme nous sommes dans un milieu homogène et non dispersif, nous devrions retrouver à peu près la même vitesse que nous avons calculée pour la vitesse de phase, soit 1496 m/s.
 
 ### Dans la vie de tous les jours manip 2
 
 Pour ces exemples de la vie courante, nous allons reprendre les 2 premiers exemples pris pour la première manipulation. Soit :
 
 - Les échogrpahies médicales :
+  Dans les échographies médicales, il existe un autre mode d'utilisation qui est le mode impulsionnel. Les échographies classiques qui donnent des imageries 2D, fonctionnent en envoyant des impulsions utlrasonores dans le corps. La vitesse de groupe est donc utilisée pour déterminer la profondeur d'un organe, reconstruire une image en temps réel ou localiser avec précision les interfaces (soit les os, muscles ou les organes). C'est une méthode qui permet une meilleure précision sur un point / endroit bien précis. Si l'image de groupe n'est pas connue, l'image serait déformée. Déformée car un échographe reconstruit toute la géométrie interne du coprs seulement à partir du temps que mettent les impulsions ultrasonores à revenir.
 
 ![Echographie explications](images/exemple_echographie.png){ width=300px }
 
-Dans les échographies médicales, il existe un autre mode d'utilisation qui est le mode impulsionnel. Les échographies classiques qui donnent des imageries 2D, fonctionnent en envoyant des impulsions utlrasonores dans le corps. La vitesse de groupe est donc utilisée pour déterminer la profondeur d'un organe, reconstruire une image en temps réel ou localiser avec précision les interfaces (soit les os, muscles ou les organes). C'est une méthode qui permet une meilleure précision sur un point / endroit bien précis. Si l'image de groupe n'est pas connue, l'image serait déformée. Déformée car un échographe reconstruit toute la géométrie interne du coprs seulement à partir du temps que mettent les impulsions ultrasonores à revenir.
-
 - Les radars :
+  Dans les radars, on utilise le même principe que pour les échographies mais avec des ondes électromagnétiques. Les radars vont envoyer des impulsions pour mesurer la distance d'un avion, la vitesse d'une voiture ou encore la position d'un drône. La vitesse de groupe est utilisée pour convertir un temps de retour en distance.
 
-- ![Radar d'un bateau](images/Image_bateau_radar.jpg){ width=300px }
-
-Dans les radars, on utilise le même principe que pour les échographies mais avec des ondes électromagnétiques. Les radars vont envoyer des impulsions pour mesurer la distance d'un avion, la vitesse d'une voiture ou encore la position d'un drône. La vitesse de groupe est utilisée pour convertir un temps de retour en distance.
+![Radar d'un bateau](images/Image_bateau_radar.jpg){ width=300px }
 
 - La télécommunication (la fibre optique) :
-Dans la fibre optique, les signaux sont envoyés sous forme de pleins d'impulsions lumineuses. La vitesse de groupe va déterminer le temps de propagation du signal, la latence d'internet ou encore la dispersion des impulsions (qui déterminent le limite du débit maximale).
-Cet exemple est parfait car c'est un milieu dispersif, contrairement au liquide de notre expérience.
+  Dans la fibre optique, des signaux sont envoyés sous forme de pleins d'impulsions lumineuses. La vitesse de groupe va déterminer le temps de propagation du signal, la latence d'internet ou encore la dispersion des impulsions (qui déterminent la limite du débit maximale).
+  Cet exemple est parfait car c'est un milieu dispersif, contrairement aux liquides de notre expérience.
 
 ### Calculs & Analyse des résultats manip 2
 
-Pour pouvoir montrer la propagation dans le liquide, dans notre car l'eau distillée, voici une image de nos mesures :
+Pour pouvoir montrer la propagation dans le liquide, dans notre cas l'eau distillée, voici une image de nos mesures :
 
 ![Vitesse de groupe : QE et QR](images/QE_et_QR_Vitesse_De_Groupe.png){ width=300px }
 
 Voici le tableau indiquant les résultats des calculs effectués.
 
-|$\Delta x$      | $\Delta t$ [s] |$\Delta v_g$ [s] |
+|$\Delta x$  [mm]| $\Delta t$ [s] |$\Delta v_g$ [s] |
 |----------------|----------------|-----------------|
 |0,7 * $10^{-3}$ |    0,028       |       0, 36     |
 
@@ -340,7 +332,7 @@ Nous constatons donc que la valeur trouvée pour la vitesse de groupe est très 
 
 Récapitulons les résultats de la première manipulation.
 
-Nous avons eu un gros porblème avec les valeurs de l'incertitude de $\Delta v$ qui vaut le 30% de la valeur mesurée lors du laboratoire. Cet écart est directement lié au fait que nous avons eu des difficultés à mesurer précisement la distance x ce qui a augmenté grandement la valeur de $\Delta \lambda$. Le fait que la variation de distance soit très faible et que l'incertitude de la mesure soit grande, cela pose un problème.
+Nous avons eu un gros problème avec les valeurs de l'incertitude de $\Delta v$ qui vaut le 30% de la valeur mesurée lors du laboratoire. Cet écart est directement lié au fait que nous avons eu des difficultés à mesurer précisement la distance x ce qui a grandement augmenté la valeur de $\Delta \lambda$. Le fait que la variation de distance soit très faible et que l'incertitude de la mesure soit grande, cela pose un problème.
 
 Au niveau des valeurs mesurées, nous avons obtenu des résultats qui se rapprochent grandement des valeurs de la consigne du laboratoire. Cela confirme que nous avons effectué correctement les mesures et que les valeurs mesurées sont correctes. Comme nous pouvons le voir, chaque écart entre la valeur donnée et la valeur mesurée est très faible.
 
@@ -351,6 +343,12 @@ Résultats de la vitesse de phase
 | Eau distillée  | 1.83           | 816600     | 1496                   | 1497        | -0.07     |
 | Glycérine      | 2.35           | 817800     | 1922                   | 1914        | +0.42     |
 | Éthanol        | 1.45           | 818000     | 1186                   | 1194        | -0.67     |
+
+| Liquide        | Vitesse mesurée [m/s] |
+|----------------|-----------------------|
+| Eau distillée  | $$1496 \pm 577$$      |
+| Glycérine      | $$1922 \pm 578$$      |
+| Éthanol        | $$1186 \pm 578$$      |
 
 Maintenant, récapitulons les résultats de la deuxième manipulation.
 
@@ -363,7 +361,11 @@ Résultats de la vitesse de groupe :
 |----------------|------------------|--------------|---------------------|---------------|
 | Eau distillée  |      1'497       |    1'493     |         4           |     0,27      |
 
-Globalement, nous pouvons donc dire que nous avons réussit à prouver les valeurs théoriques grâce à nos mesures.
+| Liquide        | Vitesse mesurée [m/s] |
+|----------------|-----------------------|
+| Eau distillée  | $$1493 \pm 0,36$$     |
+
+Globalement, nous pouvons donc dire que nous avons réussi à prouver les valeurs théoriques grâce à nos mesures.
 Comme sythèse, nous pouvons souligner :
 
 - Les vitesses de phase mesurées dans trois liquides sont toutes à moins de 1 % des valeurs tabulées.
