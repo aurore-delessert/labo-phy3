@@ -436,7 +436,7 @@ Incertitude sur la vitesse mesurée:
 - Incertitude sur la longueur: $\Delta L_{Al} = 0.001 m$
 - Incertitude sur la période: $\Delta T_{Al} = 3 \times 10^{-6} s$
 
-$\delta v_{Al,mes} = v_{Al,mes} \sqrt{\left(\frac{\Delta L_{Al}}{L_{Al}}\right)^2 + \left(\frac{\Delta T_{Al}}{T_{Al}}\right)^2} = 4888 \sqrt{\left(\frac{0.001}{0.2}\right)^2 + \left(\frac{3 \times 10^{-6}}{40.9 \times 10^{-6}}\right)^2} \approx 4888 \sqrt{(0.005)^2 + (0.073)^2} \approx 4888 \times 0.073 = 356 m/s$
+$\delta v_{Al,mes} = v_{Al,mes} \sqrt{\left(\frac{\Delta L_{Al}}{L_{Al}}\right)^2 + \left(\frac{\Delta T_{Al}}{T_{Al}}\right)^2} = 4888 \times 0.073 = 356 m/s$
 
 Donc la vitesse mesurée dans le barreau en aluminium est:
 
@@ -502,7 +502,7 @@ Incertitude sur la vitesse mesurée:
 - Incertitude sur la longueur: $\Delta L_{Fe} = 0.001 m$
 - Incertitude sur la période: $\Delta T_{Fe} = 3 \times 10^{-6} s$
 
-$$\delta v_{Fe,mes} = v_{Fe,mes} \sqrt{\left(\frac{\Delta L_{Fe}}{L_{Fe}}\right)^2 + \left(\frac{\Delta T_{Fe}}{T_{Fe}}\right)^2} = 4868 \sqrt{\left(\frac{0.001}{0.2}\right)^2 + \left(\frac{3 \times 10^{-6}}{41.08 \times 10^{-6}}\right)^2} \approx 4868 \sqrt{(0.005)^2 + (0.073)^2} \approx 4868 \times 0.073 = 355 m/s$$
+$$\delta v_{Fe,mes} = v_{Fe,mes} \sqrt{\left(\frac{\Delta L_{Fe}}{L_{Fe}}\right)^2 + \left(\frac{\Delta T_{Fe}}{T_{Fe}}\right)^2} = 4868 \times 0.073 = 355 m/s$$
 
 Donc la vitesse mesurée dans le barreau en acier est:
 
@@ -535,7 +535,7 @@ Incertitude sur la vitesse mesurée:
 - Incertitude sur la longueur: $\Delta L_{Verre} = 0.005 m$
 - Incertitude sur la période: $\Delta T_{Verre} = 3 \times 10^{-6} s$
 
-$$\delta v_{Verre,mes} = v_{Verre,mes} \sqrt{\left(\frac{\Delta L_{Verre}}{L_{Verre}}\right)^2 + \left(\frac{\Delta T_{Verre}}{T_{Verre}}\right)^2} = 4878 \sqrt{\left(\frac{0.005}{0.4}\right)^2 + \left(\frac{3 \times 10^{-6}}{82.0 \times 10^{-6}}\right)^2} = 189 m/s$$
+$$\delta v_{Verre,mes} = v_{Verre,mes} \sqrt{\left(\frac{\Delta L_{Verre}}{L_{Verre}}\right)^2 + \left(\frac{\Delta T_{Verre}}{T_{Verre}}\right)^2} = 4878 \times 0.039 = 189 m/s$$
 
 Donc la vitesse mesurée dans le barreau en verre est:
 
@@ -568,7 +568,7 @@ Incertitude sur la vitesse mesurée:
 - Incertitude sur la longueur: $\Delta L_{Bois} = 0.001 m$
 - Incertitude sur la période: $\Delta T_{Bois} = 3 \times 10^{-3} s$
 
-$$\delta v_{Bois,mes} = v_{Bois,mes} \sqrt{\left(\frac{\Delta L_{Bois}}{L_{Bois}}\right)^2 + \left(\frac{\Delta T_{Bois}}{T_{Bois}}\right)^2} = 57.8 \sqrt{\left(\frac{0.001}{0.2}\right)^2 + \left(\frac{3 \times 10^{-6}}{3.46 \times 10^{-3}}\right)^2} \approx 57.8 \times 0.005 = 0.29 m/s$$
+$$\delta v_{Bois,mes} = v_{Bois,mes} \sqrt{\left(\frac{\Delta L_{Bois}}{L_{Bois}}\right)^2 + \left(\frac{\Delta T_{Bois}}{T_{Bois}}\right)^2} = 57.8 \times 0.005 = 0.29 m/s$$
 
 Donc la vitesse mesurée dans le barreau en bois est:
 
@@ -828,3 +828,13 @@ Enfin, la troisième expérience a exploré les ondes à la surface de l'eau à 
 Aurore Delessert et Magali Tornare
 
 Yverdon-le-Bains, le 15 janvier 2026
+
+\newpage
+
+## Références
+
+https://fr.wikipedia.org/wiki/Propagation_des_ondes
+
+https://www.sciences.univ-nantes.fr/sites/claude_saintblanquet/synophys/31propa/31propa.htm?utm_source=copilot.com
+
+https://www.univdocs.com/2020/05/ondes-et-propagation.html?utm_source=copilot.com
