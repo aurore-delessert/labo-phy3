@@ -14,7 +14,6 @@ header-includes:
   - \usepackage{amsmath}
   - \usepackage{capt-of}
   - \usepackage{booktabs}
-  - \usepackage{float}
 ---
 
 \includegraphics[width=0.25\textwidth]{images/heig-logo.png}
@@ -25,11 +24,12 @@ header-includes:
 
 \noindent\rule{\textwidth}{0.4pt}\\[0.6cm]
 \begin{center}
-\includegraphics[width=\textwidth]{images/Page_de_garde.png} \end{center}
+
 
 {\Huge \textbf{Labo 03}}\\[0.5cm]
 {\LARGE \textit{Projet sur la propagation des ondes}}\\[0.3cm]
 \noindent\rule{\textwidth}{0.4pt}\\[1.5cm]
+\includegraphics[width=\textwidth]{images/Page_de_garde.png} \end{center}
 
 {\Large \textbf{Aurore Delessert, Magali Tornare}}\\
 Physique — HEIG-VD\\[1.5cm]
@@ -398,6 +398,7 @@ Nous allons utiliser le montage suivant:
 ![Montage expérimental](images/schema_barreau.jpg){#fig:QE width=80%}
 
 La marche à suivre est la suivante:
+
 1. Nous plaçons le barreau sur des supports pour qu'il soit libre de vibrer.
 2. Nous plaçons le capteur à l'extrémité du barreau.
 3. Nous émettons une onde longitudinale en tapant sur le barreau avec un petit "marteau".
