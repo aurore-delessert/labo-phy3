@@ -24,6 +24,8 @@ header-includes:
 \vspace*{3cm}
 
 \noindent\rule{\textwidth}{0.4pt}\\[0.6cm]
+\begin{center}
+\includegraphics[width=\textwidth]{images/Page_de_garde.png} \end{center}
 
 {\Huge \textbf{Labo 03}}\\[0.5cm]
 {\LARGE \textit{Projet sur la propagation des ondes}}\\[0.3cm]
@@ -373,21 +375,21 @@ Comme sythèse, nous pouvons souligner :
 
 \newpage
 
-## Experience 2 : Propagation d'une onde longitudinale dans un barreau
+## Experience 2 : Propagation d'ondes longitudinales et transversales dans un barreau
+
+### But de l'expérience
+
+Le but de cette expérience est de mesurer la vitesse de propagation d'une onde longitudinale dans différents barreaux. Pour cela nous allons analyser l'onde qui se propage dans le barreau à l'aide d'un capteurs placé à la fin du barreau. Ainsi en connaissant la fréquence de l'onde émise et la distance entre le point d'émission et le capteur, nous pourrons en déduire la vitesse de propagation de l'onde dans le barreau. 
 
 ### Rappels théoriques
 
 On est ici dans le cas d'une onde longitudinale se propageant dans un barreau. La vitesse de propagation $v$ de l'onde est reliée au module d'Young $E$ et à la masse volumique $\rho$ du matériau par la relation suivante:
 
-| - | Barreau solide |
-| ------ | ------ |
-| Facteur de force de rappel | $E$ module d'Young |
-| Facteur d'inertie | $\rho$ masse volumique |
-| Vitesse de l'onde | $v = \sqrt{\frac{E}{\rho}}= \lambda f = dfrac{\lambda}{T} m/s$ |
-
-### But de l'expérience
-
-Le but de cette expérience est de mesurer la vitesse de propagation d'une onde longitudinale dans différents barreaux. Pour cela nous allons analyser l'onde qui se propage dans le barreau à l'aide d'un capteurs placé à la fin du barreau. Ainsi en connaissant la fréquence de l'onde émise et la distance entre le point d'émission et le capteur, nous pourrons en déduire la vitesse de propagation de l'onde dans le barreau. 
+| - | Barreau solide | Unité |
+| ------ | ------ | ------ |
+| Facteur de force de rappel | $E$ module d'Young | $GPa$ |
+| Facteur d'inertie | $\rho$ masse volumique | $kg/m^3$ |
+| Vitesse de l'onde | $v = \sqrt{\frac{E}{\rho}}= \lambda f = \dfrac{\lambda}{T}$ | $m/s$ |
 
 ### Montage expérimental
 
@@ -395,9 +397,19 @@ Nous allons utiliser le montage suivant:
 
 ![Montage expérimental](images/schema_barreau.jpg){#fig:QE width=80%}
 
+La marche à suivre est la suivante:
+1. Nous plaçons le barreau sur des supports pour qu'il soit libre de vibrer.
+2. Nous plaçons le capteur à l'extrémité du barreau.
+3. Nous émettons une onde longitudinale en tapant sur le barreau avec un petit "marteau".
+4. Nous enregistrons le signal reçu par le capteur à l'aide d'un oscilloscope.
+5. Nous analysons le signal pour déterminer la période $T$ de l'onde.
+6. Nous répétons les étapes 3 à 5 pour différents barreaux.
+
+L'oscilloscope nous permet d'afficher le signal reçu par le capteur sur nos ordinateurs. Nous pouvons ainsi mesurer la période $T$ de l'onde en observant le temps entre deux crêtes successives du signal.
+
 ### Résultats de l'expérience
 
-Nous avons effectué des mesures sur trois barreaux différents: un barreau en aluminium, un barreau en laiton et un barreau en acier. Pour chaque barreau, nous avons emis des ondes en tapant dessus avec un petit "marteau" et nous avons enregistré la réponse à l'aide d'un capteur placé à l'extrémité du barreau. Voici les résultats obtenus:
+Nous avons effectué des mesures sur cinq barreaux différents: un barreau en aluminium, un barreau en laiton, un barreau en acier, un en verre et un en bois. Pour chaque barreau, nous avons emis des ondes en tapant dessus avec un petit "marteau" et nous avons enregistré la réponse à l'aide d'un capteur placé à l'extrémité du barreau. Voici les résultats obtenus:
 
 #### Barreau en aluminium
 
@@ -416,6 +428,8 @@ Vitesse mesurée:
 - $T_{Al} = 40.9 \times 10^{-6} \pm 3 \times 10^{-6} s$ (temps entre deux crêtes successives)
 
 $$v_{Al,mes} = \frac{L_{Al}}{T_{Al}} = \frac{0.2}{40.9 \times 10^{-6}} = 4888 m/s$$
+
+![Mesure barreau aluminium](images/Mesure_Alu_zoom.png){ width=600px }
 
 Incertitude sur la vitesse mesurée:
 
@@ -448,6 +462,8 @@ Vitesse mesurée:
 
 $$v_{CuZn,mes} = \frac{L_{CuZn}}{T_{CuZn}} = \frac{0.2}{61.0 \times 10^{-6}} = 3278 m/s$$
 
+![Mesure barreau laiton](images/Mesure_Laiton_zoon.png){ width=600px }
+
 Incertitude sur la vitesse mesurée:
 
 - Incertitude sur la longueur: $\Delta L_{CuZn} = 0.001 m$
@@ -479,6 +495,8 @@ Vitesse mesurée:
 
 $$v_{Fe,mes} = \frac{L_{Fe}}{T_{Fe}} = \frac{0.2}{41.08 \times 10^{-6}} = 4868 m/s$$
 
+![Mesure barreau acier](images/Mesure_Acier_inox_zoom.png){ width=600px }
+
 Incertitude sur la vitesse mesurée:
 
 - Incertitude sur la longueur: $\Delta L_{Fe} = 0.001 m$
@@ -492,13 +510,91 @@ $$v_{Fe,mes} = 4868 \pm 355 m/s$$
 
 On voit que la vitesse mesurée est en accord avec la vitesse théorique dans les limites de l'incertitude.
 
+#### Barreau en verre
+
+- Longueur du barreau: $L_{Verre} = 0.4 \pm 0.005 m$
+- Masse volumique: $\rho_{Verre} = 2500 kg/m^3$ (CRM)
+- Module d'Young: $E_{Verre} = 70 GPa$ (CRM)
+
+Vitesse théorique:
+
+$$v_{Verre} = \sqrt{\frac{E_{Verre}}{\rho_{Verre}}} = \sqrt{\frac{70 \times 10^9}{2500}} \approx 5291 m/s$$
+
+Ici pas d'incertitude car ce sont des valeurs de référence.
+
+Vitesse mesurée:
+
+- $T_{Verre} = 82.0 \times 10^{-6} \pm 3 \times 10^{-6} s$ (temps entre deux crêtes successives)
+
+$$v_{Verre,mes} = \frac{L_{Verre}}{T_{Verre}} = \frac{0.4}{82.0 \times 10^{-6}} = 4878 m/s$$
+
+![Mesure barreau verre](images/Mesure_Verre_200mm.png){ width=600px }
+
+Incertitude sur la vitesse mesurée:
+
+- Incertitude sur la longueur: $\Delta L_{Verre} = 0.005 m$
+- Incertitude sur la période: $\Delta T_{Verre} = 3 \times 10^{-6} s$
+
+$$\delta v_{Verre,mes} = v_{Verre,mes} \sqrt{\left(\frac{\Delta L_{Verre}}{L_{Verre}}\right)^2 + \left(\frac{\Delta T_{Verre}}{T_{Verre}}\right)^2} = 4878 \sqrt{\left(\frac{0.005}{0.4}\right)^2 + \left(\frac{3 \times 10^{-6}}{82.0 \times 10^{-6}}\right)^2} = 189 m/s$$
+
+Donc la vitesse mesurée dans le barreau en verre est:
+
+$$v_{Verre,mes} = 4878 \pm 189 m/s$$
+
+Avec cette valeur, on est dans le bon ordre de grandeur par rapport à la valeur théorique. Mais on remarque que la valeur mesurée est un peu plus basse que la valeur théorique. Cela peut être dû à des erreurs de mesure ou à des imperfections dans le barreau.
+
+#### Barreau en bois
+
+- Longueur du barreau: $L_{Bois} = 0.2 \pm 0.001 m$
+- Masse volumique: $\rho_{Bois} = 600 kg/m^3$ (CRM)
+- Module d'Young: $E_{Bois} = 10 GPa$ (CRM)
+
+Vitesse théorique:
+
+$$v_{Bois} = \sqrt{\frac{E_{Bois}}{\rho_{Bois}}} = \sqrt{\frac{10 \times 10^9}{600}} \approx 4082 m/s$$
+
+Ici pas d'incertitude car ce sont des valeurs de référence.
+
+Vitesse mesurée:
+
+- $T_{Bois} = 3.46 \times 10^{-3} \pm 3 \times 10^{-6} s$ (temps entre deux crêtes successives)
+
+$$v_{Bois,mes} = \frac{L_{Bois}}{T_{Bois}} = \frac{0.2}{3.46 \times 10^{-3}} \approx 57.8 m/s$$
+
+![Mesure barreau bois](images/Mesure_Bois_200mm.png){ width=600px }
+
+Incertitude sur la vitesse mesurée:
+
+- Incertitude sur la longueur: $\Delta L_{Bois} = 0.001 m$
+- Incertitude sur la période: $\Delta T_{Bois} = 3 \times 10^{-3} s$
+
+$$\delta v_{Bois,mes} = v_{Bois,mes} \sqrt{\left(\frac{\Delta L_{Bois}}{L_{Bois}}\right)^2 + \left(\frac{\Delta T_{Bois}}{T_{Bois}}\right)^2} = 57.8 \sqrt{\left(\frac{0.001}{0.2}\right)^2 + \left(\frac{3 \times 10^{-6}}{3.46 \times 10^{-3}}\right)^2} \approx 57.8 \times 0.005 = 0.29 m/s$$
+
+Donc la vitesse mesurée dans le barreau en bois est:
+
+$$v_{Bois,mes} = 57.8 \pm 0.29 m/s$$
+
+On voit que la vitesse mesurée est bien en dessous de la vitesse théorique. Cela peut être du au fait qu'on ne connais pas le type de bois utilisé et que les propriétés mécaniques peuvent varier grandement entre les différentes essences de bois. Aussi le bois ne conduit pas très bien les ondes. Nous voyons cela sur le signal reçu ou il n'y a pas beaucoup de crêtes visibles. Il se peut qu'on ai pris une mauvaise période de l'onde.
+
 ### A quoi ça sert dans la vie de tous les jours?
 
 La connaissance de la vitesse de propagation des ondes dans différents matériaux est cruciale dans de nombreux domaines d'ingénierie et de physique appliquée. Par exemple, dans le domaine de la construction, comprendre comment les ondes sonores se propagent à travers les matériaux permet de concevoir des bâtiments avec une meilleure isolation acoustique. De plus, dans l'industrie automobile et aérospatiale, la connaissance des propriétés des matériaux aide à optimiser la résistance aux vibrations et aux chocs, améliorant ainsi la sécurité et le confort.
 
-### Conclusion
+### Conclusion manip 1
 
 Dans cette expérience, nous avons mesuré la vitesse de propagation d'une onde longitudinale dans trois types de barreaux: aluminium, laiton et acier. Pour chaque matériau, nous avons comparé la vitesse mesurée avec la vitesse théorique calculée à partir du module d'Young et de la masse volumique. Nos résultats montrent que les vitesses mesurées sont en bon accord avec les vitesses théoriques, ce qui confirme la validité de la relation entre la vitesse de l'onde, le module d'Young et la masse volumique. Les incertitudes associées à nos mesures sont raisonnables et n'affectent pas significativement la conclusion de l'expérience.
+
+### Onde transversale
+
+Pour l'onde transversale, nous avons fait une observation qualitative. En méttant 2 capteurs sur le barreau, un à chaque extrémité, nous avons tapé sur le barreau pour générer une onde transversale. En tapant au milieu du barreau, nous avons observé que les deux capteurs enregistraient des signaux similaires, indiquant que l'onde s'était propagée dans les deux directions.
+
+Voici une image des signaux enregistrés par les deux capteurs:
+
+![Onde transversale](images/Onde_Transversale_milieu.png){ width=600px }
+
+### Conclusion manip 2
+
+Dans cette partie de l'expérience, nous avons observé la propagation d'une onde transversale dans un barreau en tapant au milieu. Les signaux enregistrés par les deux capteurs placés aux extrémités du barreau montrent que l'onde s'est propagée dans les deux directions à partir du point d'impact. Cette observation qualitative confirme le comportement attendu des ondes transversales dans un solide, où les particules du matériau oscillent perpendiculairement à la direction de propagation de l'onde.
 
 \newpage
 
@@ -553,12 +649,12 @@ Nous avons généré des ondes à différentes fréquences en utilisant le gén�
 Nous allons utiliser la formule de la vitesse des ondes $v = \lambda f$ et calculer l'incertitude associée avec la formule $\delta v = v \sqrt{\left(\frac{\Delta \lambda}{\lambda}\right)^2 + \left(\frac{\Delta f}{f}\right)^2}$. L'incertitude sur la longueur d'onde réelle est donnée par $\Delta \lambda = \frac{\Delta \lambda_{mes}}{G}$ où $\Delta \lambda_{mes}$ est l'incertitude sur la longueur d'onde mesurée sur l'écran qui est égale à $0.013$.
 
 | Fréquence (Hz) | Longueur d'onde mesurée sur l'écran (m) | Longueur d'onde réelle (m) | Vitesse des ondes (m/s) |
-| -------------- | -----------------------------------------| --------------------------- | ----------------------- |
-| $30 \pm 2$             | $0.014 \pm 0.002$                                | $0.0086 \pm 0.0005$  | $0.258 \pm 0.023$ |
-| $40 \pm 2$             | $0.010 \pm 0.002$                                | $0.0061 \pm 0.0005$  | $0.246 \pm 0.024$ |
-| $50 \pm 2$             | $0.008 \pm 0.002$                                | $0.0049 \pm 0.0005$  | $0.247 \pm 0.027$ |
-| $60 \pm 2$             | $0.007 \pm 0.002$                                | $0.0043 \pm 0.0005$  | $0.257 \pm 0.031$ |
-| $70 \pm 2$             | $0.006 \pm 0.002$                                | $0.0037 \pm 0.0005$  | $0.257 \pm 0.035$ |
+| -------------- | ----------------------------------------- | --------------------------- | ----------------------- |
+| $30 \pm 2$ | $0.014 \pm 0.002$ | $0.0086 \pm 0.0005$ | $0.258 \pm 0.023$ |
+| $40 \pm 2$ | $0.010 \pm 0.002$ | $0.0061 \pm 0.0005$ | $0.246 \pm 0.024$ |
+| $50 \pm 2$ | $0.008 \pm 0.002$ | $0.0049 \pm 0.0005$ | $0.247 \pm 0.027$ |
+| $60 \pm 2$ | $0.007 \pm 0.002$ | $0.0043 \pm 0.0005$ | $0.257 \pm 0.031$ |
+| $70 \pm 2$ | $0.006 \pm 0.002$ | $0.0037 \pm 0.0005$ | $0.257 \pm 0.035$ |
 
 ### Analyse des résultats
 
@@ -660,9 +756,19 @@ Avec en noir les hyperboles d'interférences.
 
 Avec $\lambda \approx \dfrac{0.008}{1.63} m \approx 0.0049 m$ et la distance entre les deux sources $d = 0.1 m$.
 
-$$d_c = n \lambda = 0.0049m$$
+$$d_c = \lambda = 0.0049m$$
 
-$$d_d = (n + 0.5) \lambda = 0.00245m$$
+$$d_c = 2 \lambda = 0.0098m$$
+
+$$d_c = 3 \lambda = 0.0147m$$
+
+$$d_d = (0.5) \lambda = 0.00245m$$
+
+$$d_d = (1.5) \lambda = 0.00735m$$
+
+$$d_d = (2.5) \lambda = 0.01225m$$
+
+Ces distances correspondent aux positions des maxima et minima d'interférence observés sur l'écran de la cuve à ondes. Pour chaque point sur l'écran, la différence de distance entre les deux sources d'ondes détermine si l'interférence est constructive ou destructive, conformément aux formules mentionnées ci-dessus.
 
 #### Dans la vie de tous les jours
 
@@ -712,6 +818,12 @@ Nous avons mesuré la vitesse des ondes à différentes fréquences et observé 
 ## Conclusion générale
 
 Au cours de ce laboratoire, nous avons exploré divers aspects de la propagation des ondes dans différents milieux, en mettant l'accent sur les ultrasons dans les liquides, les ondes longitudinales dans les barreaux solides et les ondes à la surface de l'eau dans une cuve à ondes. Chaque expérience a permis d'approfondir notre compréhension des phénomènes ondulatoires et de leurs applications pratiques.
+
+Pour la première expérience, nous avons mesuré la vitesse de phase et la vitesse de groupe des ultrasons dans différents liquides. Nos résultats ont montré une excellente concordance avec les valeurs tabulées, confirmant la validité de nos méthodes expérimentales malgré les défis rencontrés dans la mesure des incertitudes. Cette experience nous a permis de comprendre comment les échographies médicales utilisent les ultrasons pour visualiser l'intérieur du corps humain ou encore comment les ultrasons sont employés pour les radar de bateaux.
+
+La deuxième expérience a porté sur la propagation des ondes longitudinales dans des barreaux solides. Nous avons mesuré la vitesse de propagation dans des barreaux d'aluminium, de laiton et d'acier, et nos résultats ont également été en bon accord avec les valeurs théoriques. Cette expérience a mis en lumière l'importance des propriétés mécaniques des matériaux, telles que le module d'Young et la masse volumique, dans la détermination de la vitesse des ondes. Cela a des implications directes dans des domaines tels que la construction, l'aéronautique et l'industrie automobile, où la compréhension des vibrations et des chocs est cruciale pour la sécurité et la performance.
+
+Enfin, la troisième expérience a exploré les ondes à la surface de l'eau à l'aide d'une cuve à ondes. Nous avons étudié la vitesse des ondes en fonction de la fréquence, observé l'effet Doppler, les interférences entre deux sources d'ondes et la diffraction des ondes. Ces observations ont illustré les principes fondamentaux des phénomènes ondulatoires et leur pertinence dans divers contextes, allant de l'acoustique à l'optique en passant par les télécommunications.
 
 Aurore Delessert et Magali Tornare
 
