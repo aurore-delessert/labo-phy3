@@ -1,4 +1,4 @@
-# Labo de Phy3
+# Labo en tout genre
 
 ## Marche à suivre
 
